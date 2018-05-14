@@ -1,0 +1,7 @@
+it:
+  profile:
+    signed_in_as: "Hai effettuato l'accesso come:"
+    contributions: "Le tue contribuzioni:"
+    total_contributions: "Totale contribuito (Convertito in BTC):"
+    contribution_history: "Le tue contribuzioni"
+    distribution_link: "Clicca qui per vedere come funziona la distribuzione"

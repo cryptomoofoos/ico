@@ -1,0 +1,131 @@
+<svg id="content" xmlns="http://www.w3.org/2000/svg" width="833.3" height="336.2" viewBox="0 0 833.3 336.2">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #266381;
+      }
+
+      .cls-2 {
+        fill: #358ab4;
+      }
+
+      .cls-3 {
+        fill: #8bc6e3;
+      }
+
+      .cls-4 {
+        fill: #abdfc3;
+      }
+
+      .cls-5 {
+        fill: #73ca9b;
+      }
+
+      .cls-6 {
+        fill: #c94343;
+      }
+
+      .cls-7 {
+        font-size: 15px;
+      }
+
+      .cls-10, .cls-7, .cls-9 {
+        fill: #fff;
+        font-family: 'Abel', sans-serif;
+      }
+
+      .cls-10, .cls-7 {
+        font-weight: 700;
+      }
+
+      .cls-8 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-9 {
+        font-size: 14px;
+      }
+
+      .cls-10 {
+        font-size: 31.97px;
+      }
+    </style>
+  </defs>
+  <title>charts</title>
+  <g id="_Gruppo_35" data-name="&lt;Gruppo&gt;">
+    <g id="_Gruppo_36" data-name="&lt;Gruppo&gt;">
+      <path id="_Tracciato_" data-name="&lt;Tracciato&gt;" class="cls-1" d="M274.6,164.5V121.4a129.2,129.2,0,0,0-54.2,12.5l18.9,38.7A88.3,88.3,0,0,1,274.6,164.5Z" transform="translate(-35.9 -50.5)"/>
+      <path id="_Tracciato_2" data-name="&lt;Tracciato&gt;" class="cls-2" d="M186.1,157.2l29.9,31a89.4,89.4,0,0,1,19.6-13.8l-18.9-38.7A124,124,0,0,0,186.1,157.2Z" transform="translate(-35.9 -50.5)"/>
+      <path id="_Tracciato_3" data-name="&lt;Tracciato&gt;" class="cls-3" d="M183.2,160a124.1,124.1,0,0,0-22.5,29.9l38,20.2A89.5,89.5,0,0,1,213.1,191Z" transform="translate(-35.9 -50.5)"/>
+      <path id="_Tracciato_4" data-name="&lt;Tracciato&gt;" class="cls-4" d="M158.8,193.5a124.1,124.1,0,0,0-12.2,35.4l42.4,7.5a88.7,88.7,0,0,1,7.8-22.7Z" transform="translate(-35.9 -50.5)"/>
+      <path id="_Tracciato_5" data-name="&lt;Tracciato&gt;" class="cls-5" d="M145.9,232.9a118.5,118.5,0,0,0-1.1,32.9l42.8-4.5c-0.2-2.5-.3-4.9-0.3-7.3a89.8,89.8,0,0,1,1-13.5Z" transform="translate(-35.9 -50.5)"/>
+      <path id="_Tracciato_6" data-name="&lt;Tracciato&gt;" class="cls-6" d="M187.8,352.5a132.3,132.3,0,0,0,88.8,33.9c73,0,132.4-59.4,132.4-132.5S350.7,122.5,278.6,121.4v43.1a89.4,89.4,0,1,1-90.7,100.7l-42.8,4.5A132.4,132.4,0,0,0,187.8,352.5Z" transform="translate(-35.9 -50.5)"/>
+    </g>
+    <g id="_Gruppo_37" data-name="&lt;Gruppo&gt;">
+      <text class="cls-7" transform="translate(240.6 32.2) rotate(-0.2)">7<tspan x="8.5" y="0">.</tspan><tspan x="12.4" y="0">00</tspan><tspan x="29.8" y="0">0.</tspan><tspan x="42" y="0">000</tspan></text>
+      <polyline id="_Tracciato_7" data-name="&lt;Tracciato&gt;" class="cls-8" points="228.6 64.4 244.2 39.9 307.5 39.9"/>
+      <text class="cls-9" transform="translate(240.6 11.9)">Bounties</text>
+    </g>
+    <g id="_Gruppo_38" data-name="&lt;Gruppo&gt;">
+      <text class="cls-7" transform="translate(13.3 149.1) rotate(-0.2)">5.<tspan x="12.2" y="0">00</tspan><tspan x="29.6" y="0">0.</tspan><tspan x="41.8" y="0">000</tspan></text>
+      <polyline id="_Tracciato_8" data-name="&lt;Tracciato&gt;" class="cls-8" points="102.6 164.1 82.2 156.8 14.3 156.8"/>
+      <text class="cls-9" transform="translate(13.2 128.8)">Advisors</text>
+    </g>
+    <g id="_Gruppo_39" data-name="&lt;Gruppo&gt;">
+      <text class="cls-7" transform="translate(22.5 318.8) rotate(-0.2)">7<tspan x="8.5" y="0">3.</tspan><tspan x="20.7" y="0">33</tspan><tspan x="38" y="0">3.</tspan><tspan x="50.2" y="0">800</tspan></text>
+      <polyline id="_Tracciato_9" data-name="&lt;Tracciato&gt;" class="cls-8" points="140.6 300.3 97.9 326.5 22.9 326.5"/>
+      <text class="cls-9" transform="translate(22.5 298.5)">TEC SALE</text>
+    </g>
+    <g id="_Gruppo_40" data-name="&lt;Gruppo&gt;">
+      <text class="cls-7" transform="translate(0 232.5) rotate(-0.2)">4<tspan x="8.5" y="0">.</tspan><tspan x="12.3" y="0">66</tspan><tspan x="29.6" y="0">6</tspan><tspan x="38" y="0">.200</tspan></text>
+      <polyline id="_Tracciato_10" data-name="&lt;Tracciato&gt;" class="cls-8" points="102.6 203.4 75.5 240.2 0.4 240.2"/>
+      <text class="cls-9" transform="translate(0 212.2)">PRE SALE</text>
+    </g>
+    <g id="_Gruppo_41" data-name="&lt;Gruppo&gt;">
+      <text class="cls-7" transform="translate(36.7 85.2) rotate(-0.2)">5.<tspan x="12.2" y="0">00</tspan><tspan x="29.6" y="0">0.</tspan><tspan x="41.8" y="0">000</tspan></text>
+      <polyline id="_Tracciato_11" data-name="&lt;Tracciato&gt;" class="cls-8" points="130.1 115.4 105.6 92.9 37.7 92.9"/>
+      <text class="cls-9" transform="translate(36.6 64.9)">Dev./<tspan x="29.4" y="0">M</tspan><tspan x="38.7" y="0">arketing</tspan></text>
+    </g>
+    <g id="_Gruppo_42" data-name="&lt;Gruppo&gt;">
+      <text class="cls-7" transform="translate(125.9 36.5) rotate(-0.2)">5.<tspan x="12.2" y="0">00</tspan><tspan x="29.6" y="0">0.</tspan><tspan x="41.8" y="0">000</tspan></text>
+      <polyline id="_Tracciato_12" data-name="&lt;Tracciato&gt;" class="cls-8" points="164 87.5 194.8 44.2 126.9 44.2"/>
+      <text class="cls-9" transform="translate(125.8 16.2)">T<tspan x="5.8" y="0">eam Bonus</tspan></text>
+    </g>
+  </g>
+  <g id="_Gruppo_43" data-name="&lt;Gruppo&gt;">
+    <g id="_Gruppo_44" data-name="&lt;Gruppo&gt;">
+      <g id="_Gruppo_45" data-name="&lt;Gruppo&gt;">
+        <text class="cls-7" transform="translate(674.7 65.9) rotate(-0.2)">10%</text>
+        <polyline id="_Tracciato_13" data-name="&lt;Tracciato&gt;" class="cls-8" points="655.7 94.9 674.4 73.6 702.8 73.6"/>
+        <text class="cls-9" transform="translate(674.7 45.5)">M<tspan x="9.3" y="0">arketing</tspan></text>
+      </g>
+      <g id="_Gruppo_46" data-name="&lt;Gruppo&gt;">
+        <text class="cls-7" transform="translate(718.5 275.3) rotate(-0.2)">80%</text>
+        <polyline id="_Tracciato_14" data-name="&lt;Tracciato&gt;" class="cls-8" points="694.5 269.7 718.1 283 753.7 283"/>
+        <text class="cls-9" transform="translate(718.4 240)">Project</text>
+          <text class="cls-9" transform="translate(718.4 255)">Development</text>
+      </g>
+      <g id="_Gruppo_47" data-name="&lt;Gruppo&gt;">
+        <text class="cls-7" transform="translate(712.2 123.3) rotate(-0.2)">5%</text>
+        <polyline id="_Tracciato_15" data-name="&lt;Tracciato&gt;" class="cls-8" points="694.5 141.2 711.9 131 737.2 131"/>
+        <text class="cls-9" transform="translate(712.2 103)">Insurance funds</text>
+      </g>
+      <g id="_Gruppo_48" data-name="&lt;Gruppo&gt;">
+        <text class="cls-7" transform="translate(576.9 32.2) rotate(-0.2)">5%</text>
+        <polyline id="_Tracciato_16" data-name="&lt;Tracciato&gt;" class="cls-8" points="591.9 68.3 596.1 39.9 574.4 39.9"/>
+        <text class="cls-9" transform="translate(576.9 11.9)">Legal Support</text>
+      </g>
+    </g>
+    <g id="_Gruppo_49" data-name="&lt;Gruppo&gt;">
+      <path id="_Tracciato_17" data-name="&lt;Tracciato&gt;" class="cls-3" d="M650.7,127.4a123.9,123.9,0,0,0-36.5-5.8v42.9a89.5,89.5,0,0,1,23.3,3.7Z" transform="translate(-35.9 -50.5)"/>
+      <path id="_Tracciato_18" data-name="&lt;Tracciato&gt;" class="cls-2" d="M683.1,199.7l4.6-3.4,30.1-21.9c-16.6-22.1-36.6-36.7-62.8-45.6l-13.3,40.8A89.8,89.8,0,0,1,683.1,199.7Z" transform="translate(-35.9 -50.5)"/>
+      <path id="_Tracciato_19" data-name="&lt;Tracciato&gt;" class="cls-5" d="M737.3,211a123.9,123.9,0,0,0-16.8-33l-34.7,25.2a89.3,89.3,0,0,1,10.7,21Z" transform="translate(-35.9 -50.5)"/>
+      <path id="_Tracciato_20" data-name="&lt;Tracciato&gt;" class="cls-6" d="M738.7,215.3l-40.8,13.3a89.6,89.6,0,1,1-88.1-64V121.6c-72,1.2-130.2,60.2-130.2,132.5S538.9,386.6,612,386.6s132.5-59.4,132.5-132.5A124.7,124.7,0,0,0,738.7,215.3Z" transform="translate(-35.9 -50.5)"/>
+      <polygon id="_Tracciato_21" data-name="&lt;Tracciato&gt;" class="cls-6" points="702.7 164.9 702.7 164.9 661.9 178.1 661.9 178.1 702.7 164.9"/>
+    </g>
+  </g>
+  <text class="cls-10" transform="translate(208.9 191.9)">L<tspan x="14.8" y="0">WF</tspan><tspan x="-17.8" y="38.4">TOKEN</tspan></text>
+  <text class="cls-10" transform="translate(530 212.2)">FUNDS</text>
+</svg>

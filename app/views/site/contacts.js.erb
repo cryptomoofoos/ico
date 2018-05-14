@@ -1,0 +1,5 @@
+<% if @res['success'] %>
+$("#contact-us .response-contact").html("<div class='text-center mt-1 alert alert-success'>Your message has been successfully sent!<br>We will answer you quickly.</div>");
+<% else %>
+$("#contact-error").html("<div class='text-center mt-1 alert alert-danger'>Verification failed!</div>");
+<% end %>

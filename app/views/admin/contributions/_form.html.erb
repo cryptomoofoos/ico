@@ -1,0 +1,66 @@
+<%= form_for(@contrib, url: url, method: method, html: {class: 'text-left'}) do |f| %>
+
+<% if @contrib.errors.any? %>
+  <ul>
+    <% @contrib.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<% if @contrib.persisted? %>
+<div class="form-group">
+  <label>User *</label>
+  <input type='text' value="<%= @contrib.user.username %>" class="form-control" disabled>
+</div>
+
+<div class="form-group">
+  <label>Currency *</label>
+  <input type='text' value="<%= @contrib.currency %>" class="form-control" disabled>
+</div>
+<% else %>
+<div class="form-group">
+  <label>User *</label>
+  <%= f.select(:user_id, options_from_collection_for_select(@users, :id, :username), {}, class: 'select2 form-control', required: true) %>
+</div>
+
+<div class="form-group">
+  <label>Currency *</label>
+  <% currencies = [:btc, :eth, :ark, :lisk, :shift, :oxy, :zcoin, :pivx, :reddcoin, :raiblocks] %>
+  <%= f.select(:currency, options_for_select(currencies), {}, class: 'select2 form-control', required: true) %>
+</div>
+<% end %>
+
+<div class="form-group">
+  <label>Amount *</label>
+  <%= f.number_field :amount, step: :any, class: 'form-control', required: true %>
+</div>
+
+<div class="form-group">
+  <label>TX ID</label>
+  <%= f.text_field :tx_hash, class: 'form-control' %>
+</div>
+
+<div class="form-group">
+  <label>Sender Address</label>
+  <%= f.text_field :sender, class: 'form-control' %>
+</div>
+
+<div class="form-group">
+  <label>Base Bonus (%)</label>
+  <%= f.number_field :bonus_pct, class: 'form-control' %>
+</div>
+
+<div class="form-group">
+  <label>Bonus every 0.5 BTC (%)</label>
+  <%= f.number_field :bonus_per_btc, min: 0, step: :any, class: 'form-control' %>
+</div>
+
+<div class="form-group">
+  <label>Bypass Bonus Limit of <%= LWF::BONUS_LIMIT %>%</label>
+  <%= f.check_box :bypass_bonus_limit %>
+</div>
+
+<%= f.submit(nil, class: 'ml-3 btn btn-success') %>
+
+<% end %>

@@ -1,0 +1,151 @@
+<div class="row progress-titles">
+  <div class="col-2 text-left">
+    20% bonus
+  </div>
+  <div class="col-2 text-center">
+    18% bonus
+  </div>
+  <div class="col-2 text-center">
+    15% bonus
+  </div>
+  <div class="col-2 text-center">
+    13% bonus
+  </div>
+  <div class="col-2 text-center">
+    10% bonus
+  </div>
+  <div class="col-2 text-right">
+    5% bonus
+  </div>
+</div>
+
+<div class="token-timeline col-12">
+  <div class="progress">
+    <div class="progress-bar bg-danger" style="width: 78%" aria-valuemin="0" aria-valuemax="100"></div>
+  </div>
+
+  <div class="over-label row">
+    <div class="col-2 pl-0">
+      <span class="circle first" style="float:left"><img width="66%" src="/images/site/lwf-label.png"/></span>
+    </div>
+    <div class="col-2 text-center">
+      <span class="circle second mx-auto"><img width="66%" src="/images/site/lwf-label.png"/></span>
+    </div>
+    <div class="col-2 text-center">
+      <span class="circle second mx-auto"><img width="66%" src="/images/site/lwf-label.png"/></span>
+    </div>
+    <div class="col-2 text-center">
+      <span class="circle second mx-auto"><img width="66%" src="/images/site/lwf-label.png"/></span>
+    </div>
+    <div class="col-2 text-center">
+      <span class="circle second mx-auto"><img width="66%" src="/images/site/lwf-label.png"/></span>
+    </div>
+    <div class="col-2 pr-0">
+      <span class="circle first" style="float:right"><img width="66%" src="/images/site/lwf-label.png"/></span>
+    </div>
+  </div>
+</div>
+<div class=" col-12">
+  <div class="row subprogress">
+    <div class="col-2 text-left pl-0">
+      <%= l(Date.parse("23/01/2018"), format: "%e %b") %>
+    </div>
+    <div class="col-2 text-center"><%= l(Date.parse("26/01/2018"), format: "%e %b") %></div>
+    <div class="col-2 text-center"><%= l(Date.parse("1/02/2018"), format: "%e %b") %></div>
+    <div class="col-2 text-center"><%= l(Date.parse("6/02/2018"), format: "%e %b") %></div>
+    <div class="col-2 text-center"><%= l(Date.parse("10/02/2018"), format: "%e %b") %></div>
+
+    <div class="col-2 text-right pr-0">
+      <%= l(Date.parse("23/02/2018"), format: "%e %b") %>
+    </div>
+  </div>
+</div>
+<div class="row pt-5">
+  <p class="col-12 mx-auto price subtitle">
+    <span><%= t(:btc_hardcap) %>:</span><br class="d-block d-md-none">
+    (bonus incl.)
+    <%= @btc_hardcap.round %>/2000<br>
+  </p>
+</div>
+<div id="received-bitcoin-etherium" class="pt-3 pb-md-5 row justify-content-md-center">
+  <div class="col-md-3 text-left">
+    <img src="/images/site/coins/coin-btc.png" alt="Bitcoin received" align="left"/>
+    <span class="total-label"><%= t(:total) %></span>
+    BTC
+    <%= number_with_precision(@btc_total, precision: 3) %>
+  </div>
+  <div class="col-md-3 text-left">
+    <img src="/images/site/coins/coin-ark.png" alt="Ark received" align="left"/>
+    <span class="total-label"><%= t(:total) %></span>
+    ARK
+    <%= number_with_precision(@ark_total, precision: 3) %>
+  </div>
+  <div class="col-md-3 text-left">
+    <img src="/images/site/coins/coin-eth.png" alt="Etherium received" align="left"/>
+    <span class="total-label"><%= t(:total) %></span>
+    ETH
+    <%= number_with_precision(@eth_total, precision: 3) %>
+  </div>
+</div>
+<div id="received-bitcoin-etherium" class="pt-md-3 pb-md-5 row justify-content-md-center ">
+  <div class="col-md-3 text-left">
+    <img src="/images/site/coins/coin-lisk.png" align="left" alt="LISK"/>
+    <span class="total-label"><%= t(:total) %></span>
+    LISK
+    <%= number_with_precision(@lisk_total, precision: 3) %>
+  </div>
+  <div class="col-md-3 text-left">
+    <img align="left" src="/images/site/coins/coin-oxy.png" alt="OXYCOIN"/>
+    <span class="total-label"><%= t(:total) %></span>
+    OXYCOIN
+    <%= number_with_precision(@oxy_total, precision: 3) %>
+  </div>
+  <div class="col-md-3 text-left">
+    <img align="left" src="/images/site/coins/coin-shift.png" alt="SHIFT"/>
+    <span class="total-label"><%= t(:total) %></span>
+    SHIFT
+    <%= number_with_precision(@shift_total, precision: 3) %>
+  </div>
+</div>
+<div id="received-bitcoin-etherium" class="pt-md-3 pb-md-5 row justify-content-md-center ">
+  <div class="col-md-3 text-left">
+    <img align="left" src="/images/site/coins/coin-zcoin.png" alt="ZCOIN"/>
+    <span class="total-label"><%= t(:total) %></span>
+    ZCOIN
+    <%= number_with_precision(@zcoin_total, precision: 3) %>
+  </div>
+  <div class="col-md-3 text-left">
+    <img align="left" src="/images/site/coins/coin-pivx.png" alt="PIVX"/>
+    <span class="total-label"><%= t(:total) %></span>
+    PIVX
+    <%= number_with_precision(@pivx_total, precision: 3) %>
+  </div>
+  <div class="col-md-3 text-left">
+    <img align="left" src="/images/site/coins/reddcoin.svg" alt="REDDCOIN" width="60" class="mt-2 mr-3 ml-2"/>
+    <span class="total-label"><%= t(:total) %></span>
+    REDDCOIN
+    <%= number_with_precision(@reddcoin_total, precision: 3) %>
+  </div>
+</div>
+<div id="received-bitcoin-etherium" class="pt-md-3 pb-md-5 row justify-content-md-center ">
+  <div class="col-md-3 text-left">
+    <img align="left" src="/images/site/coins/coin-raiblocks.png" alt="RAIBLOCKS"/>
+    <span class="total-label"><%= t(:total) %></span>
+    RAIBLOCKS
+    <%= number_with_precision(@raiblocks_total, precision: 3) %>
+  </div>
+</div>
+<div id="received-bitcoin-etherium" class="pt-3 pb-5 row justify-content-md-center d-none">
+  <div class="col-md-3 text-left mx-auto">
+    <img align="left" src="/images/site/coins/coin-oxy.png" alt="OXYCOIN"/>
+    <span class="total-label"><%= t(:total) %></span>
+    OXYCOIN
+    <%= number_with_precision(@oxy_total, precision: 3) %>
+  </div>
+  <div class="col-md-3 text-left mx-auto">
+    <img align="left" src="/images/site/coins/coin-shift.png" alt="SHIFT"/>
+    <span class="total-label"><%= t(:total) %></span>
+    SHIFT
+    <%= number_with_precision(@shift_total, precision: 3) %>
+  </div>
+</div>

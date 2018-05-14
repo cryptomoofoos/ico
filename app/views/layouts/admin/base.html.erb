@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LWF - Admin Area</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]> <script src="assets/js/vendor/html5shiv.js"></script> <script src="assets/js/vendor/respond.min.js"></script> <![endif]-->
+    <%= stylesheet_link_tag 'admin', media: 'all' %>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body style="font-size: 13px;">
+    <section id="main-wrapper" class="theme-default">
+      <header id="header">
+        <!--logo start-->
+        <div class="brand">
+          <a href="/" class="logo">
+            <b>L</b>ocal <b>W</b>orld <b>F</b>orwarders
+          </a>
+        </div>
+        <!--logo end-->
+        <ul class="nav navbar-nav navbar-left">
+          <li class="toggle-navigation toggle-left">
+            <button class="sidebar-toggle" id="toggle-left">
+              <i class="fa fa-bars"></i>
+            </button>
+          </li>
+          <li class="toggle-profile hidden-xs">
+            <button type="button" class="btn btn-default" id="toggle-profile">
+              <i class="icon-user"></i>
+            </button>
+          </li>
+          <li class="hidden-xs hidden-sm"></li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li class="toggle-fullscreen hidden-xs">
+            <button type="button" class="btn btn-default expand" id="toggle-fullscreen">
+              <i class="fa fa-expand"></i>
+            </button>
+          </li>
+
+          <li class="toggle-navigation">
+            <%= link_to destroy_user_session_path, method: :delete do %>
+              <i class="fa fa-sign-out"></i>
+            <% end %>
+          </li>
+        </ul>
+      </header>
+      <!--sidebar left start-->
+      <aside class="sidebar sidebar-left">
+        <div class="sidebar-profile">
+          <div class="avatar">
+            <img src="/images/admin/avatar.jpg" class="img-circle profile-image" alt="profile">
+          </div>
+          <div class="profile-body dropdown">
+            <a>
+              <h4><%= current_user.username %></h4>
+            </a>
+            <!-- <small class="title">Admin</small> -->
+          </div>
+        </div>
+        <nav>
+          <h5 class="sidebar-header">Navigation</h5>
+          <ul class="nav nav-pills nav-stacked">
+            <li <%= raw " class='active'" if params[:controller] == 'admin/users' %>>
+              <%= link_to admin_users_path, title: 'Users' do %>
+              <i class="fa  fa-fw fa-users"></i>
+              Users
+              <% end %>
+            </li>
+
+            <li <%= raw " class='active'" if params[:controller] == 'admin/contributions' %>>
+              <%= link_to admin_contributions_path, title: 'Contributions' do %>
+              <i class="fa  fa-fw fa-btc"></i>
+              Contributions
+              <% end %>
+            </li>
+
+            <li <%= raw " class='active'" if params[:controller] == 'admin/btc_addresses' %>>
+              <%= link_to admin_btc_addresses_path, title: 'BTC Addresses' do %>
+              <i class="fa  fa-fw fa-btc"></i>
+              BTC Addresses
+              <% end %>
+            </li>
+
+            <li <%= raw " class='active'" if params[:controller] == 'admin/eth_addresses' %>>
+              <%= link_to admin_eth_addresses_path, title: 'ETH Addresses' do %>
+              <i class="fa  fa-fw fa-btc"></i>
+              ETH Addresses
+              <% end %>
+            </li>
+
+            <li <%= raw " class='active'" if params[:controller] == 'admin/zcoin_addresses' %>>
+              <%= link_to admin_zcoin_addresses_path, title: 'ZCOIN Addresses' do %>
+              <i class="fa  fa-fw fa-btc"></i>
+              ZCOIN Addresses
+              <% end %>
+            </li>
+
+            <li <%= raw " class='active'" if params[:controller] == 'admin/pivx_addresses' %>>
+              <%= link_to admin_pivx_addresses_path, title: 'PIVX Addresses' do %>
+              <i class="fa  fa-fw fa-btc"></i>
+              PIVX Addresses
+              <% end %>
+            </li>
+
+            <li <%= raw " class='active'" if params[:controller] == 'admin/reddcoin_addresses' %>>
+              <%= link_to admin_reddcoin_addresses_path, title: 'RDD Addresses' do %>
+              <i class="fa  fa-fw fa-btc"></i>
+              RDD Addresses
+              <% end %>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <section class="main-content-wrapper">
+        <% if alert %>
+        <div class="alert alert-danger alert-dismissable">
+          <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+          <%= alert %>
+        </div>
+        <% end %>
+
+        <% if notice %>
+        <div class="alert alert-success alert-dismissable">
+          <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+          <%= notice %>
+        </div>
+        <% end %>
+
+        <%= yield %>
+      </section>
+    </section>
+
+    <%= javascript_include_tag 'admin' %>
+    <%= yield :append_js %>
+  </body>
+</html>

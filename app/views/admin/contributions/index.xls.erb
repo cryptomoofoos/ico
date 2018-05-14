@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+  xmlns:x="urn:schemas-microsoft-com:office:excel"
+  xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+  xmlns:html="http://www.w3.org/TR/REC-html40">
+  <Worksheet ss:Name="Sheet1">
+    <Table>
+      <Row>
+        <Cell><Data ss:Type="String">ID</Data></Cell>
+        <Cell><Data ss:Type="String">Username</Data></Cell>
+        <Cell><Data ss:Type="String">Email</Data></Cell>
+        <Cell><Data ss:Type="String">Currency</Data></Cell>
+        <Cell><Data ss:Type="String">Amount</Data></Cell>
+        <Cell><Data ss:Type="String">BTC</Data></Cell>
+        <Cell><Data ss:Type="String">BTC w/ bonus</Data></Cell>
+        <Cell><Data ss:Type="String">Created at</Data></Cell>
+      </Row>
+    <% @contribs.each do |c| %>
+      <Row>
+        <Cell><Data ss:Type="Number"><%= c.user.id %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= c.user.username %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= c.user.email %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= c.currency %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= number_with_precision(c.amount, precision: c.precision) %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= number_with_precision(c.btc_amount_no_bonus, precision: 7) %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= number_with_precision(c.btc_amount, precision: 7) %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= c.created_at.strftime('%d/%m/%Y %H:%M') %></Data></Cell>
+      </Row>
+    <% end %>
+    </Table>
+  </Worksheet>
+</Workbook>

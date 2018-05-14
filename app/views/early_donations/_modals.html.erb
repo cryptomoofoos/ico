@@ -1,0 +1,222 @@
+<% if @currency == 'btc' %>
+<div class="modal fade" id="confirm-modal-btc" tabindex="-1" role="dialog" aria-labelledby="confirmModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document" style="min-width: 70%">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        <h3 class="mx-auto pt-5">CONTRIBUTE BTC<br/></h3>
+        <div class="row justify-content-sm-center mt-5">
+          <div class="col-8 text-left">
+            Hello,
+            <%= current_user.username %>, this is your contribution address for LWF ICO Project. You must send full amount (it’s okay if splitted) in the next 6 hours or you’ll have to repeat the contribution process.<br>
+            <p class="text-danger" style="padding-bottom: 42px;">
+              You’ve decided to contribute for:
+              <span class="blue-text-modal">
+                <span class="value-currency-send"></span>
+                BTC</span>
+            </p>
+
+            <p><span class="text-danger">You must send bitcoin to the following address:</span> <span id='btc_address' class="valute-address"></span></p>
+
+            <p>
+              When you’ve sent the full amount transaction will be automatically added to our DB and you can see your LWF balance grow up.
+              <br>
+              Remember that you must wait for 1 confirmation of your transaction from blockchain network to see your new LWF Balance in your profile.
+              <br>
+              A email with resume of payment information will be sent at your e-mail address.
+              <br>
+              For any problem contact us at:
+              <a href='mailto:support@lwf.io'>support@lwf.io</a>.
+            </p>
+          </div>
+        </div>
+
+        <a href="" class="btn btn-default redirect-link">OK</a>
+      </div>
+    </div>
+  </div>
+</div>
+<% elsif @currency == 'eth' %>
+<div class="modal fade" id="confirm-modal-eth" tabindex="-1" role="dialog" aria-labelledby="confirmModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document" style="min-width: 70%">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        <h3 class="mx-auto pt-5">CONTRIBUTE ETH<br/></h3>
+        <div class="row justify-content-sm-center mt-5">
+          <div class="col-8 text-left">
+            Hello
+            <%= current_user.username %>, thanks for your contribution to LWF Project with Ethereum coin.<br>
+            * You can follow this guide:
+            <a href="/docs/guide.pdf">https://www.lwf.io/docs/guide.pdf</a>
+            for contribution information and ETH official address to donate.<br>
+
+            <p class="text-danger" style="padding-bottom: 42px;">
+              You’ve decided to contribute for:
+              <span class="blue-text-modal">
+                <span class="value-currency-send"></span> ETH
+              </span>
+            </p>
+
+            <p><span class="text-danger">You must send ethereum to the following address:</span> <span id='eth_address' class="valute-address"></span></p>
+
+            Note: You can keep this address for future contribution without filling the form.
+            Amount of LWF Coins will be noted in amount of ETH contributed converted in USD at first block confirmation.
+
+            <br>
+            Warning: If you send ETH from an address associated to another LWF user, coins will be credited to that user.
+          </div>
+        </div>
+        <a href="" class="btn btn-default redirect-link">OK</a>
+      </div>
+    </div>
+  </div>
+</div>
+<% elsif @currency == 'zcoin' %>
+<div class="modal fade" id="confirm-modal-zcoin" tabindex="-1" role="dialog" aria-labelledby="confirmModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document" style="min-width: 70%">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        <h3 class="mx-auto pt-5">CONTRIBUTE ZCOIN<br/></h3>
+        <div class="row justify-content-sm-center mt-5">
+          <div class="col-8 text-left">
+            Hello <%= current_user.username %>, thanks for your contribution to LWF Project with ZCoin.
+
+            <p class="text-danger" style="padding-bottom: 42px;">
+              You’ve decided to contribute for:
+              <span class="blue-text-modal">
+                <span class="value-currency-send"></span> ZCOIN
+              </span>
+            </p>
+
+            <p>
+              <span class="text-danger">You must send ZCoins to the following address:</span>
+              <span id='zcoin_address' class="valute-address"></span>
+            </p>
+
+            Amount of LWF Coins will be noted in amount of ZCoin contributed converted in USD at first block confirmation.
+          </div>
+        </div>
+        <a href="" class="btn btn-default redirect-link">OK</a>
+      </div>
+    </div>
+  </div>
+</div>
+<% elsif @currency == 'pivx' %>
+<div class="modal fade" id="confirm-modal-pivx" tabindex="-1" role="dialog" aria-labelledby="confirmModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document" style="min-width: 70%">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        <h3 class="mx-auto pt-5">CONTRIBUTE PIVX<br/></h3>
+        <div class="row justify-content-sm-center mt-5">
+          <div class="col-8 text-left">
+            Hello <%= current_user.username %>, thanks for your contribution to LWF Project with PIVX.
+
+            <p class="text-danger" style="padding-bottom: 42px;">
+              You’ve decided to contribute for:
+              <span class="blue-text-modal">
+                <span class="value-currency-send"></span> PIVX
+              </span>
+            </p>
+
+            <p>
+              <span class="text-danger">You must send PIVX coins to the following address:</span>
+              <span id='pivx_address' class="valute-address"></span>
+            </p>
+
+            Amount of LWF Coins will be noted in amount of PIVX contributed converted in USD at first block confirmation.
+          </div>
+        </div>
+        <a href="" class="btn btn-default redirect-link">OK</a>
+      </div>
+    </div>
+  </div>
+</div>
+<% elsif @currency == 'reddcoin' %>
+<div class="modal fade" id="confirm-modal-reddcoin" tabindex="-1" role="dialog" aria-labelledby="confirmModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document" style="min-width: 70%">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        <h3 class="mx-auto pt-5">CONTRIBUTE REDDCOIN<br/></h3>
+        <div class="row justify-content-sm-center mt-5">
+          <div class="col-8 text-left">
+            Hello <%= current_user.username %>, thanks for your contribution to LWF Project with REDDCOIN.
+
+            <p class="text-danger" style="padding-bottom: 42px;">
+              You’ve decided to contribute for:
+              <span class="blue-text-modal">
+                <span class="value-currency-send"></span> REDDCOIN
+              </span>
+            </p>
+
+            <p>
+              <span class="text-danger">You must send REDDCOIN coins to the following address:</span>
+              <span id='reddcoin_address' class="valute-address"></span>
+            </p>
+
+            Amount of LWF Coins will be noted in amount of REDDCOIN contributed converted in USD at first block confirmation.
+          </div>
+        </div>
+        <a href="" class="btn btn-default redirect-link">OK</a>
+      </div>
+    </div>
+  </div>
+</div>
+<% else %>
+<div class="modal fade" id="confirm-modal-<%= @currency %>" tabindex="-1" role="dialog" aria-labelledby="confirmModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document" style="min-width: 70%">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        <h3 class="mx-auto pt-5">CONTRIBUTE
+          <%= @currency.upcase %><br/></h3>
+        <div class="row justify-content-sm-center mt-5">
+          <div class="col-8 text-left">
+            Hello
+            <%= current_user.username %>, thanks for your contribution to LWF Project with
+            <%= @currency.upcase %>
+            coin.<br>
+
+            <p class="text-danger" style="padding-bottom: 42px;">
+              You’ve decided to contribute for:
+              <span class="blue-text-modal">
+                <span class="value-currency-send"></span>
+                <%= @currency.upcase %>
+              </span>
+            </p>
+
+            <p>
+              <div style="padding-bottom: 42px;">
+                Please insert your <%= @currency.upcase %> address from where
+                you're going to send the transaction (to connect it to your profile
+                and charge up your LWF balance after contribution):
+              </div>
+
+              <div class="addressAlert alert alert-danger"></div>
+
+              <%= form_tag(profile_path, method: :put, remote: true) do %>
+              <%= text_field_tag "#{@currency}_address", current_user.address(@currency), placeholder: "Your #{@currency.upcase} address", required: true %>
+              <%= submit_tag('SAVE', class: 'btn btn-primary') %>
+              <% end %>
+            </p>
+
+            <p class="text-danger">Send your contribution to:</p>
+
+            <p class="valute-address" style="padding-bottom: 42px;">
+              <% if @currency == 'ark' %>
+              AGyJLEatH22atAeSxsrScyWzdDu1bdLXn1
+              <% elsif @currency == 'lisk' %>
+              10214293569612168828L
+              <% elsif @currency == 'shift' %>
+              8716127454558448351S
+              <% elsif @currency == 'oxy' %>
+              15287186081845849630X
+              <% elsif @currency == 'raiblocks' %>
+              xrb_114u5wospeegr1xpgzj1gorgm4d13p4ie8hkz79nixci1e4fi3ftp6jmtwdq
+              <% end %>
+            </p>
+          </div>
+        </div>
+        <a href="" class="btn btn-default redirect-link">OK</a>
+      </div>
+    </div>
+  </div>
+</div>
+<% end %>

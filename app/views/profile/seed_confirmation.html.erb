@@ -1,0 +1,38 @@
+<div class="row white-bg ">
+  <div class="container">
+    <div class="col-12 text-center">
+      <h3>SEED CONFIRMATION<br/></h3>
+      <div id="seed-contribute" class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-12 text-left mt-5">
+            This seeds must be kept safe. With this seeds you can recover your
+            account and change (just one time) your eth address for coin redeem
+            if you choose bitcoin contribution. Remember: without seeds no one
+            can help you if something goes wrong.
+            <p class="alert alert-danger d-none mt-3"></p>
+            <%= form_tag '#', method: :post do %>
+              <p class="h5 text-danger mt-5">
+                <em><%= current_user.seed %></em>
+              </p>
+              <input type="hidden" id='current-seed' value="<%= current_user.seed %>" />
+              <input type="text" id='check-seed' class="form-control" value="" />
+              <button class="btn btn-default mt-5 seed-control" type="button">CONFIRM</button>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<% content_for :extra_js do %>
+  <script>
+  $(".seed-control").click(function() {
+    if ($("#current-seed").val() == $("#check-seed").val().trim()) {
+      $('form').submit();
+    } else {
+      $('.alert').removeClass('d-none');
+      $(".alert").html("The seed doesn't match")
+    }
+  });
+  </script>
+<% end %>

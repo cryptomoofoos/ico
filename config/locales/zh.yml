@@ -1,0 +1,321 @@
+zh:
+  language: "中国"
+  headline_html: "全球第一的<br/>分散物流平台"
+  download_whitepaper: "下载白皮书"
+  contribute_now: "现在贡献"
+  presale_contrib: "预售以"
+  contribute_tec: "立即提交"
+  tecsale_contrib: "TEC销售结束日期"
+  days: "日"
+  hours: "时"
+  min: "分"
+  sec: "秒"
+  bonus: "奖金"
+  total: "合计"
+  subscribe_to_newsletter: "订阅电子简讯！"
+  subscribe: "注册"
+  subscribed_successfully: "感谢您注册我们的电子简讯！"
+  tecsale_contrib: "TEC销售结束于"
+  tecsale_start: "TEC销售开始于:"
+  btc_hardcap: "BTC Hardcap Reached"
+
+  why_lwf: "为什么要投资于LWF"
+  market_value: "市场价值"
+  estimated_volume_soon: "12个月估计总量"
+  estimated_volume_in_a_year: "12个月估计总量"
+  estimated_volume: "估计总量"
+  expected_profit: "预期利润"
+  retail_and_consumer_products_html: "零售&amp;消费品"
+  dividends: "分红"
+  health_and_farm_html: "Healt保健与医药"
+  dpos_cap: "在DPoS资本化中700M $ +"
+  announcement_html: "<a class='document-annoucement btn btn-lg btn-lwf' href='https://join.slack.com/t/lwfcoin/shared_invite/enQtMjU0MDIwNzc2MzIxLTFkZWUzMDUxMTQyMGI3ZmRjYTA1ZWJkNDgxMzczZTYxNmE3NGYwZTY2ZDdlODA4OTk1ZTY4ODkxYjU0YmM3YTg'>JOIN NOW SLACK CHANNEL!</a>
+  亲爱的支持者,<br><br>
+  <h4>这是最新的消息!</h4><br>
+  <h5>早期支持者计划现在是现场</h5><br>
+  <p class='text-left'>从2011年11月14日至2018年1月22日22:00格林威治时间，我们正在邀请人们加入我们的*早期支持计划*。 加盟要求是最低投资额0.01BTC，
+  这将为投资者激活25％的奖金，再加上每增加0.5 BTC，将会有额外的0.5％的奖金（最高奖励总额达到45％）.<br> </p>
+  <h5>*Oxycoin现在接受捐款*</h5><br>
+  <p class='text-left'>除了我们之前宣布的投资项目方法外，我们很高兴地宣布将Oxycoin添加到您的资金选择中。 </p><br><br>
+  <h5>LWF Testnet：来和我们一起锻造！</h5>
+  <p class='text-left'>我们的测试网络目前正在运行，并将于2018年1月20日之前上线。对于参加测试的用户来说，额外的奖励是在向公众开放之前的30天内，独家获得在Mainnet上锻造的奖励。</h5><br>
+  Kind Regards<br>
+  The LWF Team. </p>"
+
+
+
+
+
+  # FAQ
+  faq:
+    _: "常见问题解答"
+    question_1: "如何才能参与至ICO或预售？"
+    answer_1_html: "您可以通过在预售期正式开始时在网站上注册参加。<br>可以通过我们的后台支付付款，可以通过我们的后台进行付款。<br><br>
+      发送的金额将被转换 根据我们收到交易时的usd等价物，以每0.33美元1币（加上适用奖金）的速度兑换1美元的硬币。<br>兑换将通过按钮“兑换”从后台通过TEC销售结束。<br> <br> <a target='_blank'href='https://www.lwf.io/docs/guide.pdf'>参见：精灵贡献指南</a> <br>"
+
+    question_2: "如果通过Bitcoin付款，如何兑换令牌？"
+    answer_2_html: "对于比特币，兑换过程将与任何其他货币相同，您可以按”兑换“并获得您的LWF DPoS硬币。<br>请记住从区块链下载我们的钱包。"
+
+    question_3: "你为什么取消股息？ 现在？"
+    answer_3_html: "我们决定删除红利以符合ICO和标记的国际标准。 但是，我们整合了我们的DPoS封锁方式，让每个人都可以通过投票/支持Forgers和代表在社区中获得免费的LWF硬币"
+
+    question_4: "我是一位中国、美国或中国香港公民。我可以参与ICO吗？"
+    answer_4_html: "你可以加入，绝对的。 我们的DPoS块链符合SEC标准。"
+
+    question_5: "若在ICO期间，未达到确保项目顺利启动的最低融资数额，会发生什么？"
+    answer_5_html: "我们设定了一个针对项目启动的经济和运转条件的下限。若未达到该下限，ICO期间所有募集的资金将被退回。达到固定阈值之前，第三方契约机构仍会托管资金。"
+
+    question_6: "令牌将会在任意的Exchange交易所上市吗？"
+    answer_6_html: "是的！我们已经收到了众多在线Exchange交易所的申请，但是我们仍然无法准确确定，哪家主要的Exchange交易所将会对我们的令牌进行上市。但是，我们预计将在ICO结束后的30日内尽快完成令牌的上市。"
+
+    question_7: "由于包裹和用户的安全得到保障？"
+    answer_7_html: "这套现金的托管和用户识别系统，连同支付平台和卖方保证金提供的担保资金，确保通过LWF来往的每一个封包的安全性和可靠性。<br>
+    若欺诈或纠纷一经证实，确保买方能获得财产补偿。<br>此外，签订服务配套保险以及享受随时为您解决问题的客户服务，让您时刻安心。"
+
+    question_8:   "是否有可能在平台上预先注册为本地货运代理？"
+    answer_8_html: "当然！ 任何在TEC期间投资的人都可以要求成为本地货运代理，
+       通过支付他们的投资存款（这将是一旦注册作为卖方已经完成返回）。
+       在TEC期间决定成为货运代理的人将立即有资格获得优势
+       卖方水平和平台收取中介费的25％的折扣，为期6个月。
+       这是为了鼓励在平台启动之前建立一个货运代理网络。"
+
+    question_9: "你们的区块链允许\"挖矿\"吗？"
+    answer_9_html: "是的，维持我们DPos网络的激励机制目前获得了很好的效果。我们的201名代表和51张选票的投票者为这套民主的生态系统提供保障，代表们在这套系统中可以对交易进行确认。"
+
+    question_10: "能够提供有关LWF硬币的更多具体信息？"
+    answer_10_html:  "当然，有关我们的区块链的详情请参阅以下文档链接:<a target='_blank' href='https://www.lwf.io/docs/TEC.pdf'> TECdocument</a>"
+
+    question_11: "使用测试网络是否可以获益？"
+    answer_11: "是的，前10天可以独享LWF区块链主网的预先利益分配"
+
+  # Services
+  # Please note: Texts should have the same length!!
+  services:
+    _: "LWF SERVICES"
+    p2p_freight_forwarding: "P2P货运代理"
+    p2p_freight_forwarding_sub:  "全球首个可以让每个人接收或发送封包至世界任意角落的服务平台。全球第一的分散和安全物流概念。"
+
+    direct_logistics: "直接物流"
+    direct_logistics_sub:         "LWF的物流部门装备精良，能够提供所有便捷的服务，而且确保全年365天连续提供服务。每年还将增加新的内容。"
+
+    mobile_app_p2p_delivery_html: "移动设备App &amp;<br>P2P快速寄送"
+    mobile_app_p2p_delivery_sub:  "依靠LWF的移动App，通过我们的代理商即可申请将位于您处的封包寄送至附近的接收人，全部过程仅需1日即可完成！"
+
+    p2p_collecting_points: "P2P封包收集点"
+    p2p_collecting_points_sub:    "用户可向代理商用户投送封包，后者将安全且准时的将其交付。代理商后续将调配递送的优选时间。"
+
+  #blockchain
+  blockchain:
+    _: "LWF DPos 区块链"
+    subtitle_html: "我们的DPOS系统将允许我们拥有一个涵盖面广且安全的系统，您可以在其中分配来自P2P物流平台的所有数据。<br>
+      区块链设计用于囊括运输、处理、争议和反馈、封包处理、计费和管理功能；所有这一切都要得益于高速且合法的OpoentimeStamps Notarization系统。"
+    desc_html: "这种分散化水平将带来许多优势，定会提升LWF硬币的价值：<br> - 安全：系统不是本地化的，它位于所有网络节点上的地理位置的块链上，帮助其运行。这使得其不会受到黑客、竞争对手企业或网络破坏的病毒袭击 - <br> - 隐私和公证：数据通过加密系统进行传送，仅允许公司所有者（或拥有读取密钥的人士）读取包含在块链中的数据的系统。通过OpentimeStamps系统可以对数据的时间、日期和确定性进行认证。<br> - 民主性：201名代表和51张选票让我们的DPos具备真正的民主性。<br> - 快速：系统每8秒即可用<br> - 所有物流和处理公司均可以将LWF区块链集成在数据库当中。"
+
+  # Roadmap
+  roadmap:
+    _: "路线图"
+    event_2_html: "开始TEC<br>奖金的20％"
+    event_1_html: "LWF DPOS Testnet"
+    event_3_html: "结束TEC"
+    event_4_html: "启动主网"
+    event_5_html: "证券上市"
+    event_6_html: "设立LWF区块链基金会"
+    event_7_html: "LWF P2P门户测试版"
+    event_8_html: "P2P&Blockchain Integration"
+
+  # Token Summary
+  token:
+    _: "令牌和资金"
+    graph1: "LWF令牌"
+    graph2: "LWF资金处"
+    team_bounty_advisor: "Team/Bounty/Advisor"
+    pre_sale: "预售"
+    legal_support: "法律支持"
+    marketing: "行销"
+    insurance_funds: "保险基金"
+    project_development: "项目开发"
+
+  team:
+    _: "TEAM"
+    member_1_bio_html: "<p class='team-position'>Founder & Head of the Project</p>
+      <p class='team-description'>
+        7+ Years Proven Experience in IT Field<br>
+        2+ Years in Cryptocurrencies Consultancy<br>
+        2+ Years Proven Experience in Logistic Field<br>
+        Location: Carpi (MO), Italy<br>
+        <a target='_blank' href='https://bitcointalk.org/index.php?action=profile;u=484149'> Bitcointalk Profile </a><br>
+        <a target='_blank' href='https://www.linkedin.com/in/angel0z/'>IN</a>
+      </p>"
+    member_2_bio_html: "<p class='team-position'>Co-Founder</p>
+      <p class='team-description'>
+        Cryptocurrencies expert and entrepreneur<br>
+        5+ Years experience in OTC exchanging with one of the highest trust levels in the italian community<br>
+        Location: Treviglio (BG), Italy<br>
+        <a href='https://bitcointalk.org/index.php?action=profile;u=120821'>Bitcointalk Profile</a><br>
+        <a target='_blank' href='https://www.linkedin.com/in/fabio-legrenzi-21572580/'>IN</a>
+      </p>"
+
+    member_3_bio_html: "<p class='team-position'>CTO</p>
+      <p class='team-description'>
+        10+ Years in Software Dev, DevOps, IT Security<br>
+        Founder of Bootando<br>
+        Location: Berlin, Germany<br>
+        <a target='_blank' href='https://www.linkedin.com/in/stefanogessa/'>IN</a>
+      </p>"
+
+    member_4_bio_html: "<p class='team-position'>Frontend Developer</p>
+     <p class='team-description'>
+       Location: Cagliari (CA), Italy<br>
+       <a target='_blank' href='https://www.linkedin.com/in/davide-puddu-959446a4/'>IN</a>
+     </p>"
+
+    member_5_bio_html: "<p class='team-position'>Graphic Designer, UX Developer</p>
+      <p class='team-description'>
+        Location: Cagliari (CA), Italy<br>
+        <a target='_blank' href='https://www.linkedin.com/in/roberto-randine-3364bb21/'>IN</a>
+      </p>"
+
+    member_6_bio_html: "<p class='team-position'>Blockchain Expert, Smart Contract Developer</p>
+      <p class='team-description'>
+        Location: Torino (TO), Italy<br>
+        <a target='_blank' href='https://www.linkedin.com/in/domenico-birardi-807121149/'>IN</a>
+      </p>"
+
+    member_7_bio_html: "<p class='team-position'>Advisory Group</p>
+      <p class='team-description'>
+        Senior Advisory Group
+      </p>"
+    member_8_bio_html: "<p class='team-position'>Manager of Warehouse and Logistics</p>
+      <p class='team-description'>
+        Location: Vignola (MO), Italy<br>
+        <a target='_blank' href='https://www.linkedin.com/in/gianmatteo-ugolini-a97191134/'>IN</a>
+      </p>"
+    member_9_bio_html: "<p class='team-position'>Official Escrow</p>
+      <p class='team-description'>
+        Bitcointalk Moderator over years<br>
+        Founder of Bitcoin Foundation Italia<br>
+        Location: Forlì (RA), Italy<br>
+        <a target='_blank' href='https://www.linkedin.com/in/hostfat/'>IN</a><br>
+        <a target='_blank' href='https://www.bitcoin-italia.org/'>Bitcoin Foundation Italy</a><br>
+        <a target='_blank' href='https://bitcointalk.org/index.php?action=profile;u=203'>Bitcointalk</a>
+      </p>"
+    member_10_bio_html: "<p class='team-position'>Senior Advisor</p>
+      <p class='team-description'>
+        20+ Years Experience in Logistic Field<br>
+        Location: Bomporto (MO), Italy<br>
+        <a target='_blank' href='https://www.linkedin.com/in/gianluca-raimondi-06682980/'>IN</a>
+      </p>"
+    member_11_bio_html: "<p class='team-position'>Security Advisor</p>
+      <p class='team-description'>
+        Founder of <a target='_blank' href='http://www.gcod.co.kr'>GCOD Innovation</a><br>
+        Graduated at Yonsei University<br>
+        Expert in Security & New Technologies<br>
+        Location: Seoul, KR<br>
+        <a target='_blank' href='https://www.linkedin.com/in/passcon/'>IN</a>
+      </p>"
+    member_12_bio_html: "<p class='team-position'>Marketing & Social Media</p>
+      <p class='team-description'>
+        Cryptocurrencies Enthusiast<br>
+        Location: Italy<br>
+        <a target='_blank' href='https://www.linkedin.com/in/gianmariarizzi/'>IN</a>
+      </p>"
+    member_13_bio_html: "<p class='team-position'>Interpreter & Social Manager</p>
+      <p class='team-description'>
+        Location: Bologna, (BO), Italy<br>
+        <a target='_blank' href='https://www.linkedin.com/in/federica-greco-a3893114b/'>IN</a>
+      </p>"
+    member_14_bio_html: "<p class='team-position'>Startup Advisor & Bounty Manager</p>
+      <p class='team-description'>
+        Technology Transfer Director for Boston Entrepreneurship Center<br>
+	      Entrepreneur & Blockchain enthusiast<br>
+        Location: Roma (RM), Italy<br>
+        <a target='_blank' href='https://www.linkedin.com/in/alessandro-tozzi-5b874114/'>IN</a>
+      </p>"
+    member_15_bio_html: "<p class='team-position'>Korea Promoter & Area Manager</p>
+      <p class='team-description'>
+        Korea Area Manager, Investor Seeker<br>
+	      Gaming and Crypto enthusiast<br>
+        Location: Ulsan, Korea<br>
+        <a target='_blank' href='https://www.linkedin.com/in/hyeon-san-moon-492495134/'>IN</a>
+      </p>"
+    member_16_bio_html: "<p class='team-position'>Mascotte &amp; Team security manager</p>
+      <p class='team-description'>
+        Cute wolf since 2016<br>
+        Location: Angelo's House, Carpi (MO), Italy<br>
+      </p>"
+    member_17_bio_html: "<p class='team-position'>Blockchain Consultant & Supporter</p>
+      <p class='team-description'>
+        <a target='_blank' href='https://www.oxycoin.io'>CEO@OXYCOIN</a><br>
+	      Penetration Tester<br>
+        Location: Holland<br>
+        <a target='_blank' href='https://twitter.com/lepetitjan'>Twitter</a>
+      </p>"
+    member_18_bio_html: "<p class='team-position'>Community Specialist & Supporter</p>
+      <p class='team-description'>
+        <a target='_blank' href='https://www.oxycoin.io'>CO-FOUNDER@OXYCOIN</a><br>
+        Community Guru<br>
+        Location: Holland<br>
+      </p>"
+    member_19_bio_html: "<p class='team-position'>Developer</p>
+      <p class='team-description'>
+        DPoS Developer<br>
+        Location: Italy<br>
+      </p>"
+    member_20_bio_html: "<p class='team-position'>Asian Community Manager</p>
+      <p class='team-description'>
+       (@LIHUAJKL)<br>
+      </p>"
+    member_21_bio_html: "<p class='team-position'>Asian Community Manager</p>
+      <p class='team-description'>
+        (@BINQITING)<br>
+      </p>"
+    member_22_bio_html: "<p class='team-position'>Legal Advisor</p>
+      <p class='team-description'>
+        Lawyer specialized in Cryptocurrencies<br>
+        <a target='_blank' href='https://www.linkedin.com/in/stefano-formenti-5650417b/'>IN</a><br>
+        Location: Brescia, Italy<br>
+      </p>"
+    member_23_bio_html: "<p class='team-position'>Official Partner</p>
+      <p class='team-description'>
+      <a target='_blank' href='https://www.oxycoin.io'>OxyCoin|LWF Official Partner</a><br>
+      THE EASIEST WAY TO BUY CRYPTOCURRENCIES WITH FIAT<br>
+      Location: Holland (NL)<br>
+      </p>"
+    member_24_bio_html: "<p class='team-position'>Official Partner</p>
+      <p class='team-description'>
+      <a target='_blank' href='https://www.bitboost.net/'>BitBoost|LWF Official Partner</a><br>
+      Redefining e-commerce with cryptocurrencies<br>
+      Location: Italy<br>
+      </p>"
+    member_25_bio_html: "<p class='team-position'>Community Guru</p>
+      <p class='team-description'>
+      PIVX and LWF Community Guru<br>
+      <a target='_blank' href='https://www.linkedin.com/in/carl-anthony-bsc-a8535167/'>IN</a><br>
+      <br>
+      Location: United Kingdom<br>
+      </p>"
+    member_26_bio_html: "<p class='team-position'>Chief Marketing Officer</p>
+      <p class='team-description'>
+      PIVX Marketing Dept.<br>
+      Specialized in Social Media & Marketing<br>
+      Owner of TokenMedia<br>
+      Location: Ghana<br>
+      <a target='_blank' href='https://www.linkedin.com/in/elisha-owusu-akyaw/'>IN</a>
+      </p>"
+    member_27_bio_html: "<p class='team-position'>Copy & Writer</p>
+      <p class='team-description'>
+      Copy and Creative Mind
+      Location: Italy<br>
+      </p>"
+
+  # About US
+  about_us:
+    _: "关于我们"
+    desc_html: "LWF项目的核心诞生于一个简单的想法，但与此同时基于
+      一套复杂的链接系统：这是一条为物流而设计，融合了P2P门户（类似于Uber）的分散式区块链（Blockchain），
+      任何人都可以发货或接收。<br> LWF是一条基于DPos的区块链（blockchain），由一个积极的代表网络支持，他们维护网络，依靠LWF物流的所有“信息”来支持自己的公司。P2P平台由一套高效的信息系统和
+      集成专有技术的区块链（blockchain）提供支持，能够满足正在崛起的发展中国家需要的充足的后勤需要，同时保障
+      投资者和卖家的投资回报。<br>
+      居住在地球上的任何公民都可以通过我们的门户网站注册
+      成为代理，确保每月获得额外的收入
+      同时，任何想要使用我们即将生成的LWF硬币的人士，均可以成为一位代理，为LWF硬币的网络发展以及参加我们的DPos区块链的决策提供协助。"

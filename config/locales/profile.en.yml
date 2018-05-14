@@ -1,0 +1,36 @@
+en:
+  profile:
+    title: "MAIN PROFILE"
+    signed_in_as: "Signed in as:"
+    contributions: "Your contributions amount:"
+    total_contributions: "Total Contributed (Converted to BTC):"
+    contribution_history: "Contribution History"
+    distribution_link: "Click here to see how the distribution works"
+    forwarder_status: "Your Forwarder level:"
+    warning_html: "<b class='text-danger'>Important Notice/Warning</b>: To be able to redeem your LWF Coins when the TEC phase is close, you must have access to the email address you used to register.<br>
+      To receive your LWF coins you <u><b>must</b></u> wait for the TEC SALE period end.
+      When TEC period is complete you'll be able to click on 'Redeem your coins' and proceed with the redemption steps.<br>
+      You <u><b>must</b></u> create a LWF Wallet through our link:
+      <a target='_blank'href='https://wallet.lwf.io/'>https://wallet.lwf.io/</a><br><br>
+      When you arrive at the first screen, you have the option to Click on 'New Account' this will then generate a 12 words secret passphrase.This step is very important, please save your 12 word phrase somewhere very safe. Without your passphrase, you will not be able to gain access to your coins! It's critical you save this somewhere secure, as there is no password reset!<br>
+      When you're inside the wallet, you will see on the left hand side your public wallet adddress.<br>
+      Remember that bonus and your contribution properties will be counted during distributions.<br>
+      Please: Please: if you have any question about the number of LWF coins that you will receive at distribution period, please read on our whitepaper, and the TEC Section.<br>
+      To be clear, no coins will be sent before distribution phase starts, we will not respond to requests of this nature.<br>"
+
+  early_donations:
+    title: "TEC CONTRIBUTION FORM"
+    contribute_btc: "Contribute with BTC"
+    contribute_eth: "Contribute with ETH"
+    insert_amount: "Insert your contribution amount"
+    current_bonus_html: "With the current bonus of<br>
+      <span class='text-red-lwf'>
+        +%{bonus_pct}% + %{bonus_per_btc}% for each btc sent
+      </span> your contribution will be of:"
+    confirm_tos_html: "Confirm our <a target='_blank' href='/docs/tos.pdf'>agreement and terms of services</a>"
+    pay_button: "CONFIRM and PAY"
+    support_html: "For any kind of support send a message on our slack channel early or
+      to <a href='mailto:support@lwf.io'>support@lwf.io</a>.<br>Thanks for your help in our project."
+
+  donations:
+    insert_your_address: "Insert your %{coin} address from where you are sending:"

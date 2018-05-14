@@ -1,0 +1,634 @@
+<div class="wrap-video">
+  <div class="background-video">
+    <video width="100%" style="min-width:100%; opacity: 0.3;" class="media-player" poster="//ak3.picdn.net/shutterstock/videos/9166553/thumb/12.jpg" autoplay="" loop src="/video/site/video_presentation.mov">
+      <source type="video/mp4" src="/video/site/4858514.mp4">
+    </video>
+    <div class="clearfix"></div>
+  </div>
+
+  <div id="presentation" class="container">
+    <div class="row">
+      <section id="presentation" class="mx-auto col-12 col-md-8 text-center">
+        <img class="img-fluid" width="276" src="/images/site/logo-lwf-big.png"/>
+        <h2><%= t(:headline_html) %></h2>
+        <% if @early_contributions_open %>
+        <%= link_to "JOIN TEC SALE NOW", profile_path, target: '_blank', class: "col-10 col-md-7 mx-auto btn btn-lg btn-lwf" %>
+      <% else %>
+        <%= link_to t(:download_whitepaper), whitepaper_path(I18n.locale), target: '_blank', class: "col-10 col-md-7 mx-auto btn btn-lg btn-lwf" %>
+        <% end %>
+      </section>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <section id="presale-contributions" class="mx-auto col-md-8 text-center">
+      <h3><%= t(:tecsale_contrib) %><br></h3>
+      <p id="countdown" class="col-md-10 mx-auto"></p>
+      <p id="countdown-labels" class="col-md-10 mx-auto">
+        <span><%= t(:days) %></span>
+        <span><%= t(:hours) %></span>
+        <span><%= t(:min) %></span>
+        <span><%= t(:sec) %></span>
+      </p>
+      <!-- <p class="bonus">
+        <%= t(:bonus) %>
+        <span>+ 35%</span>
+      </p> -->
+      <%= render 'progresslwf' %>
+
+    </section>
+  </div>
+</div>
+<div class="row grey-bg">
+  <div class="container">
+    <div class="row">
+      <section id="about-us" class="text-center col-12">
+        <h3><%= t('about_us._') %><br/></h3>
+        <div class="row justify-content-around content">
+          <div class="col-md-6 text-left">
+            <%= t('about_us.desc_html') %>
+          </div>
+          <div class="col-md-3">
+            <img src="/images/site/about-us-logo.png"/>
+          </div>
+        </div>
+        <div class="row justify-content-around">
+          <div class="col-10 col-md-6">
+            <%= link_to t(:download_whitepaper), whitepaper_path(I18n.locale), target: '_blank', class: "col-md-10 mx-auto btn btn-lg btn-lwf" %>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <%= render 'faq' %>
+
+  <div id="nwl-cell" class="container">
+    <div class="col-12">
+      <section id="nwl" class="text-center">
+        <h3>NWL<br></h3>
+        <div class="nwl-form">
+          <%= form_tag(newsletter_path, method: :post, remote: true) do %>
+          <div class="col-12 col-md-8 mx-auto">
+            <p id='newsletterResponse'></p>
+            <div class="input-group">
+              <input id='emailInput' type="email" name="email" class="form-control" placeholder="<%= t(:subscribe_to_newsletter) %>" required>
+              <span class="input-group-btn">
+                <button class="btn" type="submit"><%= t(:subscribe) %></button>
+              </span>
+            </div>
+          </div>
+          <% end %>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <section id="services" class="text-center col-12">
+      <h3><%= t('services._') %><br></h3>
+      <div class="row">
+        <div class="col-md-3">
+          <img src="/images/site/connections.png"/>
+          <p><%= t('services.p2p_freight_forwarding') %></p>
+          <p><%= t('services.p2p_freight_forwarding_sub') %></p>
+        </div>
+        <div class="col-md-3">
+          <img src="/images/site/transport.png"/>
+          <p><%= t('services.direct_logistics') %></p>
+          <p><%= t('services.direct_logistics_sub') %></p>
+        </div>
+        <div class="col-md-3">
+          <img src="/images/site/mobile.png"/>
+          <p><%= t('services.mobile_app_p2p_delivery_html') %></p>
+          <p><%= t('services.mobile_app_p2p_delivery_sub') %></p>
+        </div>
+        <div class="col-md-3">
+          <img src="/images/site/box.png"/>
+          <p class="subtitle"><%= t('services.p2p_collecting_points') %></p>
+          <p><%= t('services.p2p_collecting_points_sub') %></p>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <section id="why-lwf" class="start text-center col-12">
+      <h3><%= t(:why_lwf) %><br></h3>
+      <div class="row">
+        <div class="col-md-6 graph">
+          <%= render 'graph' %>
+        </div>
+        <div class="col-md-6 text-left">
+          <div class="row data-animation">
+            <div class="col-4">
+              <img class="img-fluid" src="/images/site/dollar-basket.png"/>
+            </div>
+            <div class="col-8">
+              <div class="progress-bar-animate pba1 bg-red-lwf"></div>
+              <p>
+                <span class="text-red-lwf">$</span>
+                <span class="counter start">13,750,000.00</span>
+              </p>
+              <p class="text-red-lwf"><%= t(:estimated_volume_in_a_year) %></p>
+            </div>
+          </div>
+          <div class="row data-animation">
+            <div class="col-4">
+              <img class="img-fluid" src="/images/site/tag-icon.png"/>
+            </div>
+            <div class="col-8">
+              <div class="progress-bar-animate pba2 bg-sky-lwf"></div>
+              <p>
+                <span class="text-sky-lwf">$</span>
+                <span class="counter start">10,000,000.00</span>
+              </p>
+              <p class="text-sky-lwf"><%= t(:retail_and_consumer_products_html) %></p>
+            </div>
+          </div>
+          <div class="row data-animation">
+            <div class="col-4">
+              <img class="img-fluid" src="/images/site/pharma-icon.png"/>
+            </div>
+            <div class="col-8">
+              <div class="progress-bar-animate pba3 bg-cyan-lwf"></div>
+              <p>
+                <span class="text-cyan-lwf">$</span>
+                <span class="counter start">3,750,000.00</span>
+              </p>
+              <p class="text-cyan-lwf"><%= t(:health_and_farm_html) %></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row attemp">
+        <div class="col-md-10 mx-auto">
+          <div class="row text-center">
+            <div class="col-md-4  text-center data-animation">
+              <img src="/images/site/dollar-basket-big.png"/>
+              <p>
+                $
+                <span class="counter start">60,000,000.00</span>
+              </p>
+              <p class="text-red-lwf"><%= t(:estimated_volume) %></p>
+            </div>
+            <div class="col-md-4 text-center data-animation">
+              <img src="/images/site/dollar.png"/>
+              <p>
+                $
+                <span class="counter start">5,000,000.00</p>
+              </p>
+              <p class="text-red-lwf"><%= t(:expected_profit) %></p>
+            </div>
+            <div class="col-md-4 text-center data-animation">
+              <img src="/images/site/dpos-icon.png"/>
+              <p>
+                $ +
+                <span class="counter start">700,000,000.00
+                </p>
+              </p>
+              <p class="text-red-lwf"><%= t(:dpos_cap) %></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <section id="blockchain" class="mx-auto col-12 text-center">
+      <h3><%= t('blockchain._') %><br></h3>
+      <p class="text-left"><%= t('blockchain.subtitle_html') %></p>
+      <%= render 'infographic' %>
+
+      <ul class="text-left">
+        <%= t('blockchain.desc_html') %>
+      </ul>
+    </section>
+  </div>
+</div>
+<div class="container">
+  <div class="row d-none d-md-block">
+    <section id="road-map" class="text-center col-12">
+      <h3><%= t('roadmap._') %><br/></h3>
+
+      <% even, odd = ROADMAP_DATES.partition { |e| e[:event].even? } %>
+      <% div = 100.0 / ROADMAP_DATES.count %>
+
+      <div class="row" style="margin-top: 66px; height: 75px; display:block;">
+
+        <div class="event-top" style="left:14%">
+          <span class="marker-event bg-red-lwf"></span>
+          <div class="date-event text-red-lwf"><%= raw l(even[0][:date], format: '%d %b %Y').upcase %></div>
+          <div class="description-event">
+            <%= t("roadmap.event_#{even[0][:event]}_html") %>
+          </div>
+        </div>
+        <div class="event-top" style="left:40%">
+          <span class="marker-event bg-red-lwf"></span>
+          <div class="date-event text-red-lwf"><%= raw l(even[1][:date], format: '%d %b %Y').upcase %></div>
+          <div class="description-event">
+            <%= t("roadmap.event_#{even[1][:event]}_html") %>
+          </div>
+        </div>
+        <div class="event-top" style="left:63%">
+          <span class="marker-event bg-red-lwf"></span>
+          <div class="date-event text-red-lwf"><%= raw l(even[2][:date], format: '%d %b %Y').upcase %></div>
+          <div class="description-event">
+            <%= t("roadmap.event_#{even[2][:event]}_html") %>
+          </div>
+        </div>
+        <div class="event-top" style="left:86%">
+          <span class="marker-event bg-red-lwf"></span>
+          <div class="date-event text-red-lwf"><%= raw l(even[3][:date], format: '%d %b %Y').upcase %></div>
+          <div class="description-event">
+            <%= t("roadmap.event_#{even[3][:event]}_html") %>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 line-roadmap"></div>
+      </div>
+      <div class="row" style="margin-bottom: 66px; height: 75px; display:block;">
+        <div class="event-bottom" style="left:1%">
+          <span class="marker-event bg-red-lwf"></span>
+          <div class="date-event text-red-lwf"><%= raw l(odd[0][:date], format: '%d %b %Y').upcase %></div>
+          <div class="description-event">
+            <%= t("roadmap.event_#{odd[0][:event]}_html") %>
+          </div>
+        </div>
+        <div class="event-bottom" style="left:25%">
+          <span class="marker-event bg-red-lwf"></span>
+          <div class="date-event text-red-lwf"><%= raw l(odd[1][:date], format: '%d %b %Y').upcase %></div>
+          <div class="description-event">
+            <%= t("roadmap.event_#{odd[1][:event]}_html") %>
+          </div>
+        </div>
+        <div class="event-bottom" style="left:51%">
+          <span class="marker-event bg-red-lwf"></span>
+          <div class="date-event text-red-lwf"><%= raw l(odd[2][:date], format: '%d %b %Y').upcase %></div>
+          <div class="description-event">
+            <%= t("roadmap.event_#{odd[2][:event]}_html") %>
+          </div>
+        </div>
+        <div class="event-bottom" style="left:76%">
+          <span class="marker-event bg-red-lwf"></span>
+          <div class="date-event text-red-lwf"><%= raw l(odd[3][:date], format: '%d %b %Y').upcase %></div>
+          <div class="description-event">
+            <%= t("roadmap.event_#{odd[3][:event]}_html") %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row d-md-none d-sm-block">
+      <section id="road-map-mobile" class="text-center col-12">
+        <h3><%= t('roadmap._') %><br/></h3>
+
+        <% even, odd = ROADMAP_DATES.partition { |e| e[:event].even? } %>
+        <% div = 100.0 / ROADMAP_DATES.count %>
+
+        <div class="row">
+          <div class="line-roadmap-mobile">
+            <div class="event-left">
+              <span class="marker-event bg-red-lwf"></span>
+              <div class="date-event text-red-lwf"><%= raw l(odd[0][:date], format: '%d %b %Y').upcase %></div>
+              <div class="description-event">
+                <%= t("roadmap.event_#{odd[0][:event]}_html") %>
+              </div>
+            </div>
+            <div class="event-left">
+              <span class="marker-event bg-red-lwf"></span>
+              <div class="date-event text-red-lwf"><%= raw l(odd[1][:date], format: '%d %b %Y').upcase %></div>
+              <div class="description-event">
+                <%= t("roadmap.event_#{odd[1][:event]}_html") %>
+              </div>
+            </div>
+            <div class="event-left">
+              <span class="marker-event bg-red-lwf"></span>
+              <div class="date-event text-red-lwf"><%= raw l(odd[2][:date], format: '%d %b %Y').upcase %></div>
+              <div class="description-event">
+                <%= t("roadmap.event_#{odd[2][:event]}_html") %>
+              </div>
+            </div>
+            <div class="event-left">
+              <span class="marker-event bg-red-lwf"></span>
+              <div class="date-event text-red-lwf"><%= raw l(odd[3][:date], format: '%d %b %Y').upcase %></div>
+              <div class="description-event">
+                <%= t("roadmap.event_#{odd[3][:event]}_html") %>
+              </div>
+            </div>
+
+          </div>
+          <div class="line-roadmap-mobile">
+            <div class="event-right">
+              <span class="marker-event bg-red-lwf"></span>
+              <div class="date-event text-red-lwf"><%= raw l(even[0][:date], format: '%d %b %Y').upcase %></div>
+              <div class="description-event">
+                <%= t("roadmap.event_#{even[0][:event]}_html") %>
+              </div>
+            </div>
+            <div class="event-right">
+              <span class="marker-event bg-red-lwf"></span>
+              <div class="date-event text-red-lwf"><%= raw l(even[1][:date], format: '%d %b %Y').upcase %></div>
+              <div class="description-event">
+                <%= t("roadmap.event_#{even[1][:event]}_html") %>
+              </div>
+            </div>
+            <div class="event-right">
+              <span class="marker-event bg-red-lwf"></span>
+              <div class="date-event text-red-lwf"><%= raw l(even[2][:date], format: '%d %b %Y').upcase %></div>
+              <div class="description-event">
+                <%= t("roadmap.event_#{even[2][:event]}_html") %>
+              </div>
+            </div>
+            <div class="event-right">
+              <span class="marker-event bg-red-lwf"></span>
+              <div class="date-event text-red-lwf"><%= raw l(even[3][:date], format: '%d %b %Y').upcase %></div>
+              <div class="description-event">
+                <%= t("roadmap.event_#{even[3][:event]}_html") %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+</div>
+<div class="clearfix"></div>
+<div class="container">
+  <div class="row">
+    <section id="charts" class="text-center col-12">
+      <h3><%= t("token._") %><br/></h3>
+      <div class="row justify-content-around">
+
+        <div class="col-12">
+          <img width="100%" src="/images/site/charts.svg" alt="">
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+<div class="row grey-bg">
+  <div class="container">
+    <div class="row">
+      <%=  render "team" %>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <%=  render "talkus" %>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <section id="contact-us" class="text-center col-12">
+        <h3>CONTACT US<br/></h3>
+
+        <div class="row">
+          <div class="col-md-8 text-left">
+            <h4>Contact us through the form below</h4>
+            <div class="response-contact">
+              <%= form_tag(contacts_path, method: :post, remote: true, class: 'col-md-10') do %>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input name="email" type="email" class="form-control" id="email" placeholder="name@example.com">
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea name="message" class="form-control" id="message" rows="3"></textarea>
+              </div>
+
+              <div class="g-recaptcha" data-sitekey="<%= ENV['RECAPTCHA_SITE_KEY'] %>"></div>
+
+              <div id='contact-error'></div>
+
+              <button type="submit" class="btn btn-default">Send</button>
+              <% end %>
+            </div>
+          </div>
+          <div class="col-md-4 text-left">
+
+            <div class="row justify-content-around content">
+              <div class="col-md-12">
+                <h4>Follow us</h4>
+                <ul>
+                  <li>
+                    <a href="http://www.facebook.com/lwfofficial2017/"><img src="/images/site/social/35x35/facebook.png">
+                      Facebook</a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/lwf_ico"><img src="/images/site/social/35x35/twitter.png">
+                      Twitter</a>
+                  </li>
+                  <li>
+                    <a href="https://join.slack.com/t/lwfcoin/shared_invite/enQtMjk3MjIwMjg1NzMzLTMxNzYyYzM0MmEyMWViYmYxOGJjMGRmYjNiOWQzNDA5NjFiODc1MGIxMTMyMDk0ZWM0OWVlYzc2YTNmNjgxNTY">
+                      <img src="/images/site/social/35x35/slack.png">
+                      Slack
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://t.me/lwfofficial"><img src="/images/site/social/35x35/telegram.png">
+                      Telegram</a>
+                  </li>
+                  <li>
+                    <a href="https://bitcointalk.org/index.php?topic=2267616.new#new"><img src="/images/site/social/35x35/btctalk.png">
+                      Bitcoin Talk</a>
+                  </li>
+                  <li>
+                    <a href="https://www.reddit.com/user/LocalWorldForwarders/"><img src="/images/site/social/35x35/reddit.png">
+                      Reddit</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+<%= render 'annoucement' %>
+<% content_for :extra_js do %>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+<script>
+  $(document).ready(function () {
+
+    <% if @announcement %>
+    $('#annoucement-modal').modal('show');
+    <% end %>
+
+    $(".data-animation").hide();
+    $("#services .row div").hide();
+    var waypoints = new Waypoint({
+      element: $('#why-lwf')[0],
+      handler: function () {
+        // Graph Animation
+        setTimeout(function () {
+          $("#grey1").addClass('in')
+        }, 10);
+        setTimeout(function () {
+          $("#grey2").addClass('in')
+        }, 200);
+        setTimeout(function () {
+          $("#grey3").addClass('in')
+        }, 300);
+        setTimeout(function () {
+          $("#grey4").addClass('in')
+        }, 400);
+        setTimeout(function () {
+          $("#grey5").addClass('in')
+        }, 500);
+        setTimeout(function () {
+          $("#grey6").addClass('in')
+        }, 600);
+
+        setTimeout(function () {
+          $("#lightblue").addClass('in')
+        }, 800);
+        setTimeout(function () {
+          $("#blue").addClass('in')
+        }, 1000);
+
+        setTimeout(function () {
+          $("#small1,#small2").fadeIn('slow')
+        }, 1200);
+
+        setTimeout(function () {
+          $("#green1").addClass('in')
+        }, 1400);
+
+        setTimeout(function () {
+          $("#text-lightblue").fadeIn()
+        }, 1200);
+        setTimeout(function () {
+          $("#text-blue").fadeIn()
+        }, 1300);
+
+        setTimeout(function () {
+          $("#line1").fadeIn('slow')
+        }, 2000);
+
+        setTimeout(function () {
+          $("#text-line1").fadeIn('slow')
+        }, 2100);
+        setTimeout(function () {
+          $("#text-line1_1").fadeIn('slow')
+        }, 2200);
+
+        setTimeout(function () {
+          $("#line2").fadeIn('slow')
+        }, 2300);
+
+        setTimeout(function () {
+          $("#text-line2").fadeIn('slow')
+        }, 2400);
+        setTimeout(function () {
+          $("#text-line2_1").fadeIn('slow')
+        }, 2500);
+
+        setTimeout(function () {
+          $("#text-inside").fadeIn('slow')
+        }, 2600);
+        setTimeout(function () {
+          $("#text-inside_1").fadeIn('slow')
+        }, 2700);
+
+        setTimeout(function () {
+          $("#text-over").fadeIn('slow')
+        }, 3000);
+
+        $(".data-animation").show().addClass('animated fadeInDown');
+        $("#services .rov div").show().addClass('animated fadeInDown');
+        $('.counter').counterUp({time: 2200});
+        $("#why-lwf.start .pba1").animate({
+          width: "100%"
+        }, 2500);
+        $("#why-lwf.start .pba2").animate({
+          width: "70%"
+        }, 2500);
+        $("#why-lwf.start .pba3").animate({
+          width: "30%"
+        }, {
+          complete: function () {
+            waypoints.disable();
+          }
+        }, 2500);
+      }
+    });
+    var waypoints2 = new Waypoint({
+      element: $('.nwl-form')[0],
+      handler: function () {
+        $("#services .row div").show().addClass('animated fadeInUp', function () {
+          waypoints2.disable();
+        });
+      }
+    });
+    $('circle').hide();
+    var waypoints3 = new Waypoint({
+      element: $('.line-roadmap')[0],
+      handler: function () {
+        $('circle').show();
+        $('#charts animate').each(function () {
+          $(this).get(0).beginElement();
+        });
+        waypoints3.disable();
+      }
+    });
+    var countDownDate = new Date("Feb 23, 2018 12:00:00 GMT+0100").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function () {
+
+      // Get todays date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now an the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Display the result in the element with id="demo"
+      $('#countdown').html('<span>' + days + '</span><span>' + hours + '</span><span>' + minutes + '</span><span>' + seconds + '</span>');
+
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        $('#countdown').html("EXPIRED");
+      }
+    }, 1000);
+
+    $("nav .nav-item:not(.not-one").find("a").click(function (e) {
+      e.preventDefault();
+      var section = $(this).attr("href").slice(1);
+      $("html, body").animate({
+        scrollTop: $(section).offset().top - 24
+      });
+    });
+  });
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108056035-1"></script>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-108056035-1');
+</script>
+<% end %>

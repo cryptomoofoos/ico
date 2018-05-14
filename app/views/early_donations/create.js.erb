@@ -1,0 +1,8 @@
+$(".redirect-link").attr('href', '<%= @redirect %>');
+$(".value-currency-send").html(<%= params[:amount].to_f %>.toFixed(<%= @precision %>));
+$('#btc_address').html('<%= current_user.tx_btc_address.try(:address) %>')
+$('#eth_address').html('<%= current_user.tx_eth_address.try(:address) %>')
+$('#zcoin_address').html('<%= @zcoin_address.try(:address) %>')
+$('#pivx_address').html('<%= @pivx_address.try(:address) %>')
+$('#reddcoin_address').html('<%= @reddcoin_address.try(:address) %>')
+$('#confirm-modal-<%= @currency %>').modal('show');

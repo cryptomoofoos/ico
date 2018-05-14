@@ -1,0 +1,34 @@
+<div id="annoucement-modal" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+        <button type="button" class="close text-right p-2" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+      <div class="modal-body">
+        <section id="annoucement" class="mx-auto col-12 text-center pb-1">
+          <h3>LWF OFFICIAL NEWS<br></h3>
+          <%= t(:announcement_html) %>
+          <span class="mx-auto close btn btn-lg btn-lwf p3" style="float:none" data-dismiss="modal" aria-label="Close">
+            OK
+          </span>
+        </section>
+      </div>
+
+    </div>
+  </div>
+</div>
+<style>
+#annoucement-modal .modal-dialog {
+    max-width: 70%;
+  }
+  @media only screen and (max-width: 760px) {
+    #annoucement-modal .modal-dialog {
+        max-width: 96%;
+      }
+      #annoucement-modal a.document-annoucement {
+          font-size: 10px;
+        }
+  }
+</style>

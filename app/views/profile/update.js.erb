@@ -1,0 +1,6 @@
+<% unless current_user.valid? %>
+$(".addressAlert").html("");
+  <% current_user.errors.full_messages.each do |err| %>
+  $(".addressAlert").append("<li><%= err %></li>");
+  <% end %>
+<% end %>

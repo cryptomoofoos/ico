@@ -1,0 +1,311 @@
+it:
+  language: "Italiano"
+  headline_html: "La prima piattaforma<br/>logistica decentralizzata del mondo"
+  download_whitepaper: "DOWNLOAD WHITEPAPER"
+  contribute_now: "ENTRA NEL PRESALE ORA!"
+  presale_contrib: "IL PRESALE TERMINA TRA:"
+  contribute_tec: "ENTRA NELLA TEC SALE ORA!"
+  tecsale_contrib: "LA TEC SALE TERMINA TRA:"
+  tecsale_start: "TEC SALE STARTS IN:"
+  days: "Giorni"
+  hours: "Ore"
+  min: "Min"
+  sec: "Sec"
+  bonus: "Bonus"
+  total: "Totale"
+  subscribe_to_newsletter: "ISCRIVITI ALLA NEWSLETTER!"
+  subscribe: "Iscriviti"
+  subscribed_successfully: "Grazie per esserti iscritto alla nostra newsletter!"
+  btc_hardcap: "BTC Hardcap Reached"
+
+  why_lwf: "PERCHE' CONTRIBUIRE IN LWF"
+  market_value: "Valore Mercato"
+  estimated_volume_soon: "Volume stimato in 12 mesi"
+  estimated_volume_in_a_year: "Volume stimato in 12 mesi"
+  estimated_volume: "Volume Stimato"
+  dpos_cap: "700M$+ In capitalizzazione DPoS"
+  retail_and_consumer_products_html: "Retail &amp; Consumer Products"
+  dividends: "Dividendi"
+  health_and_farm_html: "Healt Care &amp; Pharmaceuticals"
+  announcement_html: "<a class='document-annoucement btn btn-lg btn-lwf' href='https://join.slack.com/t/lwfcoin/shared_invite/enQtMjU0MDIwNzc2MzIxLTFkZWUzMDUxMTQyMGI3ZmRjYTA1ZWJkNDgxMzczZTYxNmE3NGYwZTY2ZDdlODA4OTk1ZTY4ODkxYjU0YmM3YTg'>ENTRA SUL NOSTRO SLACK ORA!</a>
+    <br>Cari Supporter del progetto,<br><br>
+    <h4>Vogliamo condividere con noi le ultime novità di LWF</h4><br>
+    <h5>E' POSSIBILE DONARE FINO AL 22 GENNAIO CON L'ESP (Early Supporters Program)</h5><br>
+    <p class='text-left'>Dal 14 Novembre (22GMT) sarà possibile donare e ricevere ottimi bonus tramite l' *EARLY SUPPORTERS PROGRAM*.  Il minimo richiesto per investire è di 0.01BTC,<br>
+    Il bonus iniziale sarà del 25% e aumenterà di 0.5% per ogni 0.5BTC donati, con un massimo del 45%.<br> </p>
+    <h5>Accettiamo anche OXYCOIN e PIVX come valute per le donazioni</h5><br>
+    <h5>LWF Testnet - Venite a forgiare con noi!</h5>
+    <p class='text-left'>La nostra testnet (https://texplorer.lwf.io) è disponibile fino al 20 Gennaio 2018. Vista la lunga durata per tutti coloro che parteciperanno attivamente come delegati, saranno previsti 30 giorni di forging esclusivo al lancio della main-net.</p><br><br>
+    <h5>LWF P2P Portal in ALPHA per il 20 Dicembre!</h5><br>
+    <p class='text-left'>Una versione Alpha con funzioni ridotte del portale P2P di LWF verrà rilasciata entro il 20 Dicembre, per mostrare ai nostri investitori come, e su cosa stiamo lavorando..<br><br>
+    <br>
+    Il Team LWF. </p>"
+  ## Blockchain Section
+  faq:
+    _: "FAQ"
+    question_1: "Come posso partecipare alla TEC o al Presale?"
+    answer_1_html: "E' possibile partecipare iscrivendosi al sito al momento dell'inizio ufficiale del periodo di Presale.<br>Tramite il backoffice sarà possibile effettuare un pagamento in Ethereum, Bitcoin, ARK, Lisk o Shift.<br><br>Verrà dunque calcolato al momento dell'invio un valore in $, che verrà quindi convertito nel corrispettivo in LWF Coin.<br>Il redeem sarà disponibile a partire dal termine del TEC Sale, potrete ritirare le vostre monete sempre dal backoffice..<br> <br><br><a target='_blank' href='https://www.lwf.io/docs/guide.pdf'>Guida a come contribuire con Ethereum</a>"
+    question_2: "Come posso effettuare il redeem degli LWF Coin se ho pagato tramite Bitcoin o altre monete?"
+    answer_2_html: "Per Bitcoin il redeem sarà disponibile nel backoffice come per tutte le altre coin.<br>Conservate attentamente i vostri seed mnemonici consegnati al momento della creazione dell'account perchè non vi sarà modo di recuperare i vostri coins per il redeem qualora li abbiate persi."
+    question_3: "Avete rimosso i dividendi? Perchè?"
+    answer_3_html: "Al fine di essere compliant con tutte le normative riguardanti i Token e le loro funzioni abbiamo deciso di optare per la strada di una tecnologia diversa. Potrete ricevere continui incentivi anche con DPoS supportando il vostro delegato preferito, votandolo, in cambio lui tutto gli LWF forgiati, potrà condividerli con la community"
+    question_4: "Sono un cittadino Cinese, Americano o di Hong Kong. Posso partecipare alla TEC?"
+    answer_4_html: "Certo, LWF coin rispetta gli standard legali e non è un token che distribuisce dividendi o ritorni di alcun genere, dunque è assolutamente a norma di legge."
+    question_5: "Cosa accadrà se durante la TEC non verranno raggiunto il numero minimo di fondi atti a garantire il corretto avvio del progetto?"
+    answer_5_html: "Abbiamo impostato un limite affinchè il progetto possa avviarsi sia dal punto di vista economico che funzionale. Qualora il limite non dovesse essere raggiunto, tutti i fondi raccolti durante il periodo di TEC verranno restituiti. Un escrow designato manterrà i fondi fino al raggiungimento della soglia stabilita."
+    question_6: "I token verranno listati su qualche exchange?"
+    answer_6_html: "Certamente! Abbiamo già fatto richiesta a più exchange online, possiamo confermarvi che HitBTC ci ha confermato la disponibilità a listarci. Per gli altri vi daremo informazioni non appena possibile."
+    question_7: "Come viene garantita la sicurezza dei pacchi e degli utenti?"
+    answer_7_html: "Un sistema avanzato di escrow ed identificazione degli utenti,unito a un fondo assicurativo alimentato dalle transazioni della piattaforma stessa e dalle cauzioni versate dai venditori, garantirà piena sicurezza ed affidabilità a chiunque faccia transitare un pacco tramite LWF.<br>In caso di appurata frode o negligenza sarà aperta una disputa che garantirà al buyer un rimborso dei beni.<br>Sarà inoltre possibile affidarsi, sottoscrivendo l'assicurazione accessoria del servizio, affidarsi ad un customer services sempre disponibile per le vostre problematiche."
+    question_8: "Sarà possibile pre-iscriversi come Local Forwarders sulla piattaforma?"
+    answer_8_html: "Certamente! Chiunque investa durante la TEC potrà richiedere di diventare un Local Forwarders, anticipando la cauzione dal proprio investimento (che sarà poi restituita all'utente una volta terminato il ruolo di venditore). Chiunque scelga di diventare Forwarders durante la TEC avrà direttamente accesso ad un livello di venditore avvantaggiato e per 6 mesi avrà un 25% di sconto sulle fees applicate dal sito sulle sue vendite. Questo al fine di incentivare la creazione anticipata di una rete di spedizionieri ancora prima del rilascio della piattaforma."
+    question_9: "La vostra blockchain permette la forgiatura (mining)?"
+    answer_9_html: "Sì, gli incentivi per mantenere il nostro network DPoS, sono molto buoni. I nostri 201 delegati, ed i votanti con 52 voti ciascuno, garantiscono un democratico ecosistema, dove i delegati confermano le transazioni."
+    question_10: "E' possibile avere informazioni più specifiche sulla moneta? "
+    answer_10_html: "Sì, le specifiche della nostra blockchain sono disponibili nella pagina <a target='_blank' href='https://www.lwf.io/docs/TEC.pdf'>TEC Document</a>"
+    question_11: "Vi saranno dei benefici per chi utilizza la test-net?"
+    answer_11: "Sì, i primi 10 giorni di main-net della blockchain LWF potranno pre-minare con l'esclusiva sugli altri"
+
+
+  ## Blockchain Section
+  blockchain:
+    _:  "The LWF DPoS  Blockchain"
+    subtitle_html: "Il nostro sistema DPoS ci permetterà di avere un sistema distribuito e sicuro dove allocare tutti i dati della nostra piattaforma P2P di logistica.<br>La BlockChain è designata per contenere i dati relativi alle spedizioni, all'handling, alle dispute e feedbacks, handling dei pacchi, fatturazione e amministrazione dell'azienda logistica; tutto questo in modo veloce e legalmente valido grazie all'OpoentimeStamps Notarization."
+    desc_html: "Questo livello di decentralizzazione porterà  una serie di vantaggi che sicuramente daranno valore alla LWF Coin stessa:
+    <ul>
+    <li> Sicuro: il sistema non è localizzato, si trova sulla blockchain geolocalizzata su tutti i nodi del network che ne permettono il funzionamento. Questo la rende inattaccabile da hackers, virus presenti nella rete aziendale o sabotaggi da parte di competitors.<br>
+    <li>Privacy & Notarizzazione: I dati saranno tutelati da un sistema di crittaggio che permetterà solamente al proprietario dell'azienda (o chi detenga la chiave per leggere la crittografia) di leggere i dati contenuti nella blockchain. Inoltre col sistema di OpentimeStamps è possibile certficare orario, data e certezza del dato dandogli valore legale.</li>
+    <li>Democratico: 201 delegati e 51 voti disponibili rendono il nostro sistema DPoS veramente democratico.</li>
+    <li>Veloce: Solo 15 secondi per la conferma di ogni blocco!</li>
+    <li>Tutte le aziende di logistica ed handling potranno integrare la blockchain LWF come database di dati.</li>
+    <br>
+    </ul><br>
+    Technical Data Resume:<br> <ul>
+    <li> 201 Delegati</li>
+    <li> 51 Voti</li>
+    <li> 15 Seconds per blocco </li>
+    <li> 5 LWF ad ogni blocco per il primo anno </li>
+    <li> 10 giorni di Pre-Forging premio ai tester della testnet al momento del lancio della main-net </li>
+    <li> 100M LWF Preminati, 78% in TECH</li>
+    <li> Testnet Avaliable in Nov 13.</li>"
+
+  # Services
+  # Please note: Texts should have the same length!!
+  services:
+    _: "LWF P2P Platform SERVICES"
+    p2p_freight_forwarding: "P2P Freight Forwarding"
+    p2p_freight_forwarding_sub: "Il primo servizio al mondo che permette a chiunque di ricevere o rispedire pacchi in ogni parte del globo. Il primo vero concetto di logistica decentralizzata e sicura."
+
+    direct_logistics: "Logistica Diretta"
+    direct_logistics_sub: "La già attrezzata sede logistica di LWF offrirà da subito tutti i servizi e garantirà continuità del servizio per 365 giorni l'anno. Sono previste implementazioni ogni anno."
+
+    mobile_app_p2p_delivery_html: "Mobile App &amp;<br>consegna espressa P2P"
+    mobile_app_p2p_delivery_sub: "L'app mobile LWF permette di richiedere una consegna di un pacco dalla vostra sede ad un destinatario vicino tramite i forwarders!, tutto questo in giornata!"
+
+    p2p_collecting_points: "P2P Punti di raccolta pacchi"
+    p2p_collecting_points_sub: "Gli utenti possono far recapitare i pacchi ai Forwarders che li terranno al sicuro e pronti alla consegna. I Forwarders accorderanno poi un orario preferito di consegna."
+
+  # Roadmap
+  roadmap:
+    _: "ROAD MAP"
+    event_2_html: "Inizio TEC<br>Bonus 20%"
+    event_1_html: "LWF DPoS Testnet"
+    event_3_html: "Fine TEC"
+    event_4_html: "Lancio Main Net"
+    event_5_html: "Exchange Listing"
+    event_6_html: "Creazione della fondazione LWF Blockchain"
+    event_7_html: "LWF P2P Portal Beta"
+    event_8_html: "P2P&Blockchain Integration "
+
+  # Token Summary
+  token:
+    _: "LWF COINS E FONDI"
+    graph1: "LWF Coin"
+    graph2: "LWF Divisione Fondi"
+    team_bounty_advisor: "Team"
+    pre_sale: "Pre-Sale"
+    legal_support: "Supporto Legale"
+    marketing: "Marketing"
+    insurance_funds: "Fondo"
+    project_development: "Sviluppo Progetto"
+
+  team:
+    _: "TEAM"
+    member_1_bio_html: "<p class='team-position'>Founder & Head of the Project</p>
+      <p class='team-description'>
+        7+ Years Proven Experience in IT Field<br>
+        2+ Years in Cryptocurrencies Consultancy<br>
+        2+ Years Proven Experience in Logistic Field<br>
+        Location: Emilia-Romagna, Italy<br>
+        <a target='_blank' href='https://bitcointalk.org/index.php?action=profile;u=484149'> Bitcointalk Profile </a><br>
+        <a target='_blank' href='https://www.linkedin.com/in/angel0z/'>IN</a>
+      </p>"
+
+    member_2_bio_html: "<p class='team-position'>Co-Founder</p>
+      <p class='team-description'>
+        Cryptocurrencies expert and entrepreneur<br>
+        5+ Years experience in OTC exchanging with one of the highest trust levels in the italian community<br>
+        Location: Treviglio (BG), Italy<br>
+        <a href='https://bitcointalk.org/index.php?action=profile;u=120821'>Bitcointalk Profile</a><br>
+        <a target='_blank' href='https://www.linkedin.com/in/fabio-legrenzi-21572580/'>IN</a>
+      </p>"
+
+    member_3_bio_html: "<p class='team-position'>CTO</p>
+      <p class='team-description'>
+        10+ Years in Software Dev, DevOps, IT Security<br>
+        Founder of Bootando<br>
+        Location: Berlin, Germany<br>
+        <a target='_blank' href='https://www.linkedin.com/in/stefanogessa/'>IN</a>
+      </p>"
+
+    member_4_bio_html: "<p class='team-position'>Frontend Developer</p>
+     <p class='team-description'>
+       Location: Cagliari (CA), Italy<br>
+       <a target='_blank' href='https://www.linkedin.com/in/davide-puddu-959446a4/'>IN</a>
+     </p>"
+
+    member_5_bio_html: "<p class='team-position'>Graphic Designer, UX Developer</p>
+      <p class='team-description'>
+        Location: Cagliari (CA), Italy<br>
+        <a target='_blank' href='https://www.linkedin.com/in/roberto-randine-3364bb21/'>IN</a>
+      </p>"
+
+    member_6_bio_html: "<p class='team-position'>Lead Developer</p>
+      <p class='team-description'>
+        Location: Torino (TO), Italy<br>
+        <a target='_blank' href='https://www.linkedin.com/in/domenico-birardi-807121149/'>IN</a>
+      </p>"
+
+    member_7_bio_html: "<p class='team-position'>Advisory Group</p>
+      <p class='team-description'>
+      Advisory Group
+      </p>"
+    member_8_bio_html: "<p class='team-position'>Manager of Warehouse and Logistics</p>
+      <p class='team-description'>
+        Location: Vignola (MO), Italy<br>
+        <a target='_blank' href='https://www.linkedin.com/in/gianmatteo-ugolini-a97191134/'>IN</a>
+      </p>"
+    member_9_bio_html: "<p class='team-position'>Official Escrow</p>
+      <p class='team-description'>
+        Bitcointalk Moderator over years<br>
+        Founder of Bitcoin Foundation Italia<br>
+        Location: Forlì (RA), Italy<br>
+        <a target='_blank' href='https://www.linkedin.com/in/hostfat/'>IN</a><br>
+        <a target='_blank' href='https://www.bitcoin-italia.org/'>Bitcoin Foundation Italy</a><br>
+        <a target='_blank' href='https://bitcointalk.org/index.php?action=profile;u=203'>Bitcointalk</a>
+      </p>"
+    member_10_bio_html: "<p class='team-position'>Senior Advisor</p>
+      <p class='team-description'>
+        20+ Years Experience in Logistic Field<br>
+        Location: Bomporto (MO), Italy<br>
+        <a target='_blank' href='https://www.linkedin.com/in/gianluca-raimondi-06682980/'>IN</a>
+      </p>"
+    member_11_bio_html: "<p class='team-position'>Security Advisor</p>
+      <p class='team-description'>
+        Founder of <a target='_blank' href='http://www.gcod.co.kr'>GCOD Innovation</a><br>
+        Graduated at Yonsei University<br>
+        Expert in Security & New Technologies<br>
+        Location: Seoul, KR<br>
+        <a target='_blank' href='https://www.linkedin.com/in/passcon/'>IN</a>
+      </p>"
+    member_12_bio_html: "<p class='team-position'>Marketing & Social Media</p>
+      <p class='team-description'>
+        Cryptocurrencies Enthusiast<br>
+        Location: Italy<br>
+        <a target='_blank' href='https://www.linkedin.com/in/gianmariarizzi/'>IN</a>
+      </p>"
+    member_13_bio_html: "<p class='team-position'>Interpreter & Social Manager</p>
+      <p class='team-description'>
+        Location: Bologna, (BO), Italy<br>
+        <a target='_blank' href='https://www.linkedin.com/in/federica-greco-a3893114b/'>IN</a>
+      </p>"
+    member_14_bio_html: "<p class='team-position'>Startup Advisor & Bounty Manager</p>
+      <p class='team-description'>
+        Technology Transfer Director for Boston Entrepreneurship Center<br>
+	      Entrepreneur & Blockchain enthusiast<br>
+        Location: Roma (RM), Italy<br>
+        <a target='_blank' href='https://www.linkedin.com/in/alessandro-tozzi-5b874114/'>IN</a>
+      </p>"
+    member_16_bio_html: "<p class='team-position'>Mascotte &amp; Team security manager</p>
+      <p class='team-description'>
+        Cute wolf since 2016<br>
+        Location: Angelo's House, Carpi (MO), Italy<br>
+      </p>"
+    member_17_bio_html: "<p class='team-position'>Blockchain Consultant & Supporter</p>
+      <p class='team-description'>
+        <a target='_blank' href='https://www.oxycoin.io'>CEO@OXYCOIN</a><br>
+	      Penetration Tester<br>
+        Location: Holland<br>
+        <a target='_blank' href='https://twitter.com/lepetitjan'>Twitter</a>
+      </p>"
+    member_18_bio_html: "<p class='team-position'>Community Specialist & Supporter</p>
+      <p class='team-description'>
+        <a target='_blank' href='https://www.oxycoin.io'>CO-FOUNDER@OXYCOIN</a><br>
+        Community Guru<br>
+        Location: Holland<br>
+      </p>"
+    member_19_bio_html: "<p class='team-position'>Developer</p>
+      <p class='team-description'>
+        DPoS Developer<br>
+        Location: Italy<br>
+      </p>"
+    member_20_bio_html: "<p class='team-position'>Asian Community Manager</p>
+      <p class='team-description'>
+       (@LIHUAJKL)<br>
+      </p>"
+    member_21_bio_html: "<p class='team-position'>Asian Community Manager</p>
+      <p class='team-description'>
+        (@BINQITING)<br>
+      </p>"
+    member_22_bio_html: "<p class='team-position'>Legal Advisor</p>
+      <p class='team-description'>
+        Lawyer specialized in Cryptocurrencies<br>
+        <a target='_blank' href='https://www.linkedin.com/in/stefano-formenti-5650417b/'>IN</a><br>
+        Location: Brescia, Italy<br>
+      </p>"
+    member_23_bio_html: "<p class='team-position'>Official Partner</p>
+      <p class='team-description'>
+      <a target='_blank' href='https://www.oxycoin.io'>OxyCoin|LWF Official Partner</a><br>
+      THE EASIEST WAY TO BUY CRYPTOCURRENCIES WITH FIAT<br>
+      Location: Holland (NL)<br>
+      </p>"
+    member_24_bio_html: "<p class='team-position'>Official Partner</p>
+      <p class='team-description'>
+      <a target='_blank' href='https://www.bitboost.net/'>BitBoost|LWF Official Partner</a><br>
+      Redefining e-commerce with cryptocurrencies<br>
+      Location: Italy<br>
+      </p>"
+    member_25_bio_html: "<p class='team-position'>Community Guru</p>
+      <p class='team-description'>
+      PIVX and LWF Community Guru<br>
+      <a target='_blank' href='https://www.linkedin.com/in/carl-anthony-bsc-a8535167/'>IN</a><br>
+      <br>
+      Location: United Kingdom<br>
+      </p>"
+    member_26_bio_html: "<p class='team-position'>Chief Marketing Officer</p>
+      <p class='team-description'>
+      PIVX Marketing Dept.<br>
+      Specialized in Social Media & Marketing<br>
+      Owner of TokenMedia<br>
+      Location: Ghana<br>
+      <a target='_blank' href='https://www.linkedin.com/in/elisha-owusu-akyaw/'>IN</a>
+      </p>"
+    member_27_bio_html: "<p class='team-position'>Copy & Writer</p>
+      <p class='team-description'>
+      Copy and Creative Mind
+      Location: Italy<br>
+      </p>"
+  #About US
+  about_us:
+    _: "CHI SIAMO"
+    desc_html: "Il cuore del progetto LWF nasce da un idea semplice ma allo
+      stesso tempo complessa e articolata: Una blockchain decentralizzata e pensata per la logistica, unita ad un portale P2P (Uber Like), dove
+      chiunque può essere spedizioniere o ricevente.<br>LWF è una blockchain basata su tecnologia DPoS supportata un network attivo di delegati che mantengono
+      il network ove sono appoggiate tutte le \"informazioni\" logistiche della LWF e delle aziende che si si appoggeranno. La P2P Platform è inoltre supportata
+      da un efficiente sistema informativo e
+      dall'integrazione di tecnologie blockchain proprietarie, in grado di fornire risposte adeguate necessità logistiche trascurate di paesi emergenti, garantendo
+      allo stesso tempo un ritorno economico a investitori e venditori.<br>
+      Qualsiasi utente nel mondo, potrà registrarsi tramite il nostro portale
+      divenire un forwarders, generando così un entrata extra ogni mesi
+      Inoltre chiunque voglia utilizzare la nostra LWF Coin potrà generare, diventando un delegato ed aiutando il network LWF Coin e partecipare alla vita sociale e
+      decisionale della nostra Blockchain DPoS."

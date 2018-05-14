@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>https://www.lwf.io/en</loc>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.lwf.io/docs/lwf_whitepaper_en.pdf</loc>
+  <lastmod>2017-10-13T03:34:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.lwf.io/docs/lwf_whitepaper_it.pdf</loc>
+  <lastmod>2017-10-13T03:34:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.lwf.io/docs/lwf_whitepaper_pt.pdf</loc>
+  <lastmod>2017-10-17T10:27:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.lwf.io/docs/lwf_whitepaper_ru.pdf</loc>
+  <lastmod>2017-10-13T03:34:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.lwf.io/it</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.lwf.io/es</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.lwf.io/pt</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.lwf.io/ru</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.lwf.io/zh</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.lwf.io/docs/guide.pdf</loc>
+  <lastmod>2017-10-12T05:38:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.lwf.io/docs/tokens.pdf</loc>
+  <lastmod>2017-10-12T05:38:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+</urlset>

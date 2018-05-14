@@ -1,0 +1,64 @@
+<div class="row grey-bg">
+  <div class="container">
+    <div class="row">
+      <section id="refund" class="mx-auto col-md-8 ">
+        <%= form_tag('#', id: 'refundForm', method: :post, remote: true) do %>
+
+        <h3 class="h5 text-danger mt-5 mb-5 text-center">
+          REFUND<br>
+        </h3>
+
+        <div id='response-contact'></div>
+
+        <div class="form-group row">
+          <label for="name" class="col-sm-4 col-form-label">First Name:</label>
+          <div class="col-sm-8">
+            <%= text_field_tag :first_name, nil, class: 'form-control', placeholder: 'First Name', required: true %>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="surname" class="col-sm-4 col-form-label">Last Name:</label>
+          <div class="col-sm-8">
+            <%= text_field_tag :last_name, nil, class: 'form-control', placeholder: 'Last Name', required: true %>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="email" class="col-sm-4 col-form-label">Email</label>
+          <div class="col-sm-8">
+            <%= email_field_tag :email, nil, class: 'form-control', placeholder: 'Your Email', required: true %>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="seed-words" class="col-sm-4 col-form-label">12-Seed-Words obtained during registration:</label>
+          <div class="col-sm-8">
+            <%= text_field_tag :seed, nil, class: 'form-control', placeholder: '12-Seed-Words' %>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="reason">Reason for the refund request:</label>
+          <%= text_area_tag :reason, nil, class: 'form-control', rows: 3, required: true %>
+        </div>
+
+        <div class="form-group row">
+          <label for="refund-address" class="col-sm-4 col-form-label">Address for your refund:</label>
+          <div class="col-sm-8">
+            <%= text_field_tag :address, nil, class: 'form-control', placeholder: 'Your refund address', required: true %>
+          </div>
+        </div>
+
+        <div class="g-recaptcha" data-sitekey="<%= ENV['RECAPTCHA_SITE_KEY'] %>"></div>
+
+        <button class="btn btn-default mt-5" type="submit">CONFIRM</button>
+        <% end %>
+      </section>
+    </div>
+  </div>
+</div>
+
+<% content_for :extra_js do %>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<% end %>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport"/>
+    <title>LWF - Local World Forwarders</title>
+
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag 'site', media: 'all' %>
+
+    <style type="text/css">
+      .st0 {
+        fill: #C94343;
+      }
+      .st1 {
+        fill: #358AB4;
+      }
+      .st2 {
+        fill: #73CA9B;
+      }
+    </style>
+
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+  </head>
+
+  <body class="landing">
+    <nav class="navbar navbar-expand-md navbar-dark bg-lwf">
+      <a class="navbar-brand" href="<%= root_path(I18n.locale) %>"><img src="/images/site/logo-lwf.png"/></a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-lwf" aria-controls="navbar-lwf" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbar-lwf">
+
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="/#presentation">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+
+          <li class="nav-item dropdown not-one">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Documentation</a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <% if I18n.locale == :en %>
+              <% I18n.available_locales.each do |l| %>
+              <%= link_to "Whitepaper #{l.upcase}", whitepaper_path(l), target: '_blank', class: "dropdown-item" %>
+              <% end %>
+            <% else %>
+              <%= link_to "Whitepaper EN", whitepaper_path(:en), target: '_blank', class: "dropdown-item" %>
+              <%= link_to "Whitepaper #{I18n.locale.upcase}", whitepaper_path(I18n.locale), target: '_blank', class: "dropdown-item" %>
+              <% end %>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown not-one">
+            <a class="nav-link dropdown-toggle" href="<%= profile_path %>" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blockchain</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown04">
+              <a class="dropdown-item" href="#blockchain">Overview</a>
+              <a class="dropdown-item" href="http://explorer.lwf.io">Blockchain Explorer</a>
+              <a class="dropdown-item" href="https://wallet.lwf.io">Wallet</a>
+              <a class="dropdown-item" href="https://tec.lwf.io">TEC Documents</a>
+              <a class="dropdown-item" href="https://github.com/lwfcoin">Github Source</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/#why-lwf">Why LWF</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/#faq">FAQ</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/#road-map">Roadmap</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/#team">Team</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" target="_blank" href="/#contact-us">Contact us</a>
+          </li>
+          <% if current_user %>
+          <li class="nav-item dropdown not-one">
+            <a class="nav-link dropdown-toggle" href="<%= profile_path %>" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Profile
+              <a>
+                <div class="dropdown-menu" aria-labelledby="dropdown03">
+                  <%= link_to "Profile", profile_path, class: "dropdown-item" %>
+                  <%= link_to "Signout", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+                </div>
+              </li>
+            <% else %>
+              <li class="nav-item not-one">
+                <%= link_to "Login/Signup", new_user_session_path, class: "nav-link" %>
+              </li>
+              <% end %>
+              <li class="nav-item dropdown not-one">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img alt="Language flag" src="/images/site/flag/<%= I18n.locale %>.png"/></a>
+                <div class="dropdown-menu" aria-labelledby="dropdown02">
+                  <% I18n.available_locales.each do |l| %>
+                  <%= link_to t(:language, locale: l), url_for(locale: l), class: 'dropdown-item' %>
+                  <% end %>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <%= yield %>
+        <%= javascript_include_tag 'site' %>
+        <%= yield :extra_js %>
+        
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="mb-2 mb-sm-0 col-sm-6 text-center text-sm-left">LWF Logistics - Local World Forwarders © 2017</div>
+              <div id="social" class="col-sm-6 float-sm-left float-md-right text-sm-right text-center">
+                <a href="http://www.facebook.com/lwfofficial2017/"><img src="/images/site/social/facebook.png"></a>
+                <a href="https://twitter.com/lwf_ico"><img src="/images/site/social/twitter.png"></a>
+                <a href="https://join.slack.com/t/lwfcoin/shared_invite/enQtMjk3MjIwMjg1NzMzLTMxNzYyYzM0MmEyMWViYmYxOGJjMGRmYjNiOWQzNDA5NjFiODc1MGIxMTMyMDk0ZWM0OWVlYzc2YTNmNjgxNTY"><img src="/images/site/social/slack.png"></a>
+                <a href="https://t.me/lwfofficial"><img src="/images/site/social/telegram.png"></a>
+                <a href="https://bitcointalk.org/index.php?topic=2267616.new#new"><img src="/images/site/social/btctalk.png"></a>
+                <a href="https://www.reddit.com/user/LocalWorldForwarders/"><img src="/images/site/social/reddit.png"></a>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </body>
+    </html>

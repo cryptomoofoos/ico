@@ -1,0 +1,13 @@
+//= require jquery
+//= require jquery_ujs
+//= require admin/bootstrap.min
+//= require admin/jquery.navgoco.min
+//= require admin/jquery.fullscreen-min
+//= require admin/jquery.dataTables.min.js
+//= require admin/dataTables.bootstrap
+//= require admin/chart.min
+//= require admin/jquery-vector.min
+//= require admin/jquery-jvectormap-demo
+//= require admin/select2.min
+//= require admin/main
+//= require_self

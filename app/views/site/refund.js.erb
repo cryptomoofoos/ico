@@ -1,0 +1,6 @@
+<% if @res['success'] %>
+$('#refundForm')[0].reset();
+$("#response-contact").html("<div class='text-center mt-1 alert alert-success'>Your message has been successfully sent!<br>We will answer you quickly.</div>");
+<% else %>
+$("#response-contact").html("<div class='text-center mt-1 alert alert-danger'>Verification failed!</div>");
+<% end %>

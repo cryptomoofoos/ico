@@ -1,0 +1,159 @@
+<%= render 'profile/contribute' %>
+
+<%= form_tag('#', method: :post, remote: true) do %>
+<div class="grey-bg " style="padding-top: 0px;">
+  <div id="contribute" class="container">
+    <div class="col-12" style="border-bottom: 2px solid #161F38; padding: 60px 0px">
+      <h4 class="title-donation text-center mb-5">Contribute with
+        <span style="text-transform: uppercase"><%= @currency %></span>
+      </h4>
+
+      <% if params[:currency] == 'oxy' %>
+      <div class="row justify-content-md-center">
+        <div class="col-md-6 ml-5 form-group">
+          <img class="float-left mr-3 mt-3" src="/images/site/oxy-black.png" width="65px"/>
+          <label class="col-8"><%= t('donations.insert_your_address', coin: 'OXY') %></label>
+          <%= text_field_tag "#{@currency}_address", current_user.address(@currency),
+            class: "col-8 float-left form-control", required: true,
+            style: "border-radius: 2px; height: 38px;text-transform: uppercase;" %>
+        </div>
+      </div>
+      <% end %>
+
+      <div class="row justify-content-md-center">
+        <div class="col-md-6 ml-5 form-group">
+          <% if params[:currency] == 'btc'  %>
+          <img class="float-left mr-3 mt-3" src="/images/site/lwf-bitcoin-contribute.png" width="65px"/>
+          <% elsif params[:currency] == 'eth' %>
+          <img class="float-left mr-3 mt-3" style="filter: invert(100%)" src="/images/site/lwf-etherium.png" width="65px"/>
+          <% elsif params[:currency] == 'oxy' %>
+          <img class="float-left mr-3 mt-3" src="/images/site/oxy-black.png" width="65px"/>
+          <% elsif params[:currency] == 'zcoin' %>
+          <img class="float-left mr-3 mt-3" src="/images/site/coins/coin-zcoin.png" width="65px" style="filter: invert(100%);"/>
+          <% elsif params[:currency] == 'shift' %>
+          <img class="float-left mr-3 mt-3" src="/images/site/coins/coin-shift.png" width="65px" style="filter: invert(80%);"/>
+          <% elsif params[:currency] == 'lisk' %>
+          <img class="float-left mr-3 mt-3" src="/images/site/coins/coin-lisk.png" width="65px" style="filter: invert(100%);"/>
+          <% elsif params[:currency] == 'pivx' %>
+          <img class="float-left mr-3 mt-3" src="/images/site/coins/coin-pivx.png" width="65px" style="filter: invert(100%);"/>
+          <% elsif params[:currency] == 'reddcoin' %>
+          <img class="float-left mr-3 mt-3" src="/images/site/coins/reddcoin.svg" width="65px" style="filter: invert(100%);"/>
+          <% elsif params[:currency] == 'raiblocks' %>
+          <img class="float-left mr-3 mt-3" src="/images/site/coins/coin-raiblocks.png" width="65px" style="filter: invert(100%);"/>
+          <% end %>
+          <label class="col-8">Insert your contribution amount</label>
+          <input
+            autocomplete="off"
+            id="currencyInput"
+            name="amount"
+            type="number"
+            step="any"
+            min="0"
+            class="col-8 float-left form-control"
+            style="border-radius: 2px; height: 38px;text-transform: uppercase;"
+            placeholder="<%= params[:currency] %>"
+            required="required"/>
+        </div>
+      </div>
+
+      <div class="row justify-content-md-center">
+        <div class="col-md-6 ml-5">
+          <p class="text-center mb-5" style="margin-top:46px;">
+            <% if current_user.contribution_bonus.present? %>
+            With the current bonus of<br>
+            <span class='text-red-lwf'>
+              +<%= current_user.contribution_bonus %>%
+            </span> your contribution will be of:
+            <% else %>
+            <%= t('early_donations.current_bonus_html', bonus_pct: LWF::BONUS, bonus_per_btc: LWF::BONUS_PER_BTC) %>
+            <% end %>
+          </p>
+        </div>
+      </div>
+
+      <div class="row justify-content-md-center">
+        <div class="col-md-6  ml-5">
+          <img class="float-left mr-3" src="/images/site/lwf-bitcoin-contribute.png" width="60px"/>
+          <input id='inputBtcBonus' disabled="disabled" type="number" class="col-8 float-left form-control" style="border-radius: 2px; height: 38px; text-transform: uppercase" />
+        </div>
+      </div>
+
+      <div class="row justify-content-md-center">
+        <div class="col-md-5 text-center" style="margin-top:46px;">
+          <div class="form-check">
+            <label class="form-check-label text-danger">
+              <input id="terms-condiction" type="checkbox" required="required" class="form-check-input">
+              <%= t('early_donations.confirm_tos_html') %>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 text-center confirm-transaction">
+        <button type="submit" class="btn btn-default" disabled>
+          <%= t('early_donations.pay_button') %>
+        </button>
+      </div>
+      <div class="row">
+        <div class="col-md-12 mt-5">
+          <p class="text-left">
+            <%= t('early_donations.support_html') %>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>
+<% end %>
+
+<%= render 'modals' %>
+
+<% content_for :extra_js do %>
+<script>
+var calcAmount = function (amount) {
+  <% if @current_user.referred_by == 'BRAZIL' || @current_user.contribution_bonus.present? %>
+  if ($('#terms-condiction').prop('checked') == true) {
+    $(".confirm-transaction button").removeAttr('disabled');
+  } else {
+    $(".confirm-transaction button").attr('disabled', 'disabled');
+  }
+  <% else %>
+  if (amount >= <%= MINIMUM_BTC_CONTRIB %> && $('#terms-condiction').prop('checked') == true) {
+    $(".confirm-transaction button").removeAttr('disabled');
+  } else {
+    $(".confirm-transaction button").attr('disabled', 'disabled');
+  }
+  <% end %>
+}
+$(document).ready(function () {
+  $('#terms-condiction').on('change',function(){
+
+    if ($(this).prop('checked')) {
+      $('.form-check-label.text-danger').removeClass('text-danger');
+    }
+      $('#currencyInput').trigger("change");
+  });
+  $('#currencyInput').on('change keyup', function () {
+    var amount = $('#currencyInput').val();
+
+    if (!amount || amount == "" || amount == undefined) {
+      return false;
+    }
+
+    $.ajax({
+      url: "/exchange/<%= @currency %>",
+      data: {
+        amount: amount
+      },
+      dataType: "JSON",
+      success: function (data) {
+        $("#inputBtcBonus").val(data.btc_bonus.toFixed(7));
+        calcAmount(data.btc)
+      }
+    });
+  });
+});
+</script>
+<% end %>

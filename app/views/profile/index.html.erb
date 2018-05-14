@@ -1,0 +1,104 @@
+<%= render 'contribute' %>
+
+<% if @early_contributions_open %>
+
+<div class="row white-bg pt-sm-5">
+  <div id="contribute" class="container mt-5 mb-5 mb-sm-0 mt-sm-0">
+
+    <div class="row justify-content-center">
+      <div class="col-12 mb-5">
+        <p class="warning-text">
+          <%= t('profile.warning_html') %>
+        </p>
+      </div>
+
+      <div class="col-6 col-sm-5 col-md-3 text-center">
+        <%= link_to new_early_donation_path(:btc) do %>
+        <div class="btn-contribute">
+          <h4>Contribute BTC</h4>
+          <img class="col-8" src="/images/site/coins/coin-btc.png" alt="BitCoin"/>
+        </div>
+        <% end %>
+      </div>
+
+      <div class="col-6 col-sm-5 col-md-3 text-center">
+        <%= link_to new_early_donation_path(:oxy) do %>
+        <div class="btn-contribute">
+          <h4>Contribute Oxycoin</h4>
+          <img class="col-8" src="/images/site/coins/coin-oxy.png" alt="Oxy coin"/>
+        </div>
+        <% end %>
+      </div>
+
+      <div class="col-6 col-sm-5 col-md-3 text-center">
+        <%= link_to new_early_donation_path(:eth) do %>
+        <div class="btn-contribute">
+          <h4>Contribute ETH</h4>
+          <img class="col-8" src="/images/site/coins/coin-eth.png" alt="Etherium"/>
+        </div>
+        <% end %>
+      </div>
+
+      <div class="col-6 col-sm-5 col-md-3 text-center">
+        <%= link_to new_early_donation_path(:ark) do %>
+        <div class="btn-contribute">
+          <h4>Contribute ARK</h4>
+          <img class="col-8" src="/images/site/coins/coin-ark.png" alt="ARK"/>
+        </div>
+        <% end %>
+      </div>
+
+      <div class="col-6 col-sm-5 col-md-3 text-center">
+        <%= link_to new_early_donation_path(:lisk) do %>
+        <div class="btn-contribute">
+          <h4>Contribute LISK</h4>
+          <img class="col-8" src="/images/site/coins/coin-lisk.png" alt="LISK"/>
+        </div>
+        <% end %>
+
+      </div>
+
+      <div class="col-6 col-sm-5 col-md-3 text-center">
+        <%= link_to new_early_donation_path(:shift) do %>
+        <div class="btn-contribute">
+          <h4>Contribute SHIFT</h4>
+          <img class="col-8" src="/images/site/coins/coin-shift.png" alt="SHIFT"/>
+        </div>
+        <% end %>
+      </div>
+      <div class="col-6 col-sm-5 col-md-3 text-center">
+        <%= link_to new_early_donation_path(:zcoin) do %>
+        <div class="btn-contribute">
+          <h4>Contribute ZCoin</h4>
+          <img class="col-8" src="/images/site/coins/coin-zcoin.png" alt="ZCOIN"/>
+        </div>
+        <% end %>
+      </div>
+      <div class="col-6 col-sm-5 col-md-3 text-center">
+        <%= link_to new_early_donation_path(:pivx) do %>
+        <div class="btn-contribute">
+          <h4>Contribute PIVX</h4>
+          <img class="col-8" src="/images/site/coins/coin-pivx.png" alt="PIVX"/>
+        </div>
+        <% end %>
+      </div>
+      <div class="col-6 col-sm-5 col-md-3 text-center">
+        <%= link_to new_early_donation_path(:reddcoin) do %>
+        <div class="btn-contribute">
+          <h4>Contribute REDDCOIN</h4>
+          <img class="col-8" src="/images/site/coins/reddcoin.svg" alt="REDDCOIN"/>
+        </div>
+        <% end %>
+      </div>
+      <div class="col-6 col-sm-5 col-md-3 text-center">
+        <%= link_to new_early_donation_path(:raiblocks) do %>
+        <div class="btn-contribute">
+          <h4>Contribute RAIBLOCKS</h4>
+          <img class="col-8" src="/images/site/coins/coin-raiblocks.png" alt="RAIBLOCKS"/>
+        </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+<% end %>

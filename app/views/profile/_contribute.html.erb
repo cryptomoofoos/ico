@@ -1,0 +1,44 @@
+<div class="row grey-bg">
+  <div class="container">
+    <div class="col-12 text-center">
+      <section id="contribute-profile">
+        <h3><%= params[:controller] == 'profile' ? t('profile.title') : t('early_donations.title') %><br/></h3>
+        <div class="row first-row">
+          <div class="col-md-4">
+            <p class="text-danger"><%= t('profile.signed_in_as') %>
+              <span><%= link_to current_user.username, profile_path %></span>
+            </p>
+
+            <p class="blue-text-modal">
+              <%= link_to t('profile.contribution_history'), donation_history_path %>
+            </p>
+
+            <% if current_user.is_forwarder? %>
+              <p class="blue-text-modal">
+                <% if current_user.forwarder.present? %>
+                  <%= t('profile.forwarder_level') %> <%= current_user.forwarder.level %> (<%= current_user.forwarder.status %>)
+                <% else %>
+                  <%= t('profile.forwarder_level') %> 0 (unverified)
+                <% end %>
+              </p>
+            <% end %>
+          </div>
+
+          <div class="col-md-4">
+            <p class="text-danger"><%= t('profile.contributions') %></p>
+            <p>
+              <%= t('profile.total_contributions') %>
+              <%= number_with_precision(@user_total_btc, precision: 7) %>
+            </p>
+            <a href="/docs/distribution.pdf" target="_blank"><%= t('profile.distribution_link') %></a><br>
+          </div>
+
+          <div class="col-md-4 mx-auto text-center">
+            <a href="#" class="btn btn-default btn-lwf mt-2" disabled="disabled" style="cursor: not-allowed;">LWF REDEMPTION</a>
+            <p>Redeem you LWF from Feb 23th 2018</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>

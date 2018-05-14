@@ -1,0 +1,8 @@
+/.bundle
+/log
+/tmp
+/config/secrets.yml
+/data
+/db/schema.rb
+.DS_Store
+.env

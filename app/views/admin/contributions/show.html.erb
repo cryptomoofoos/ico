@@ -1,0 +1,41 @@
+<div class="pageheader">
+  <h1>Contributions</h1>
+</div>
+<section id="main-content" class="animated fadeInUp">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Contribution #<%= @contrib.id %></h3>
+          <div class="actions pull-right">
+            <i class="fa fa-expand"></i>
+            <i class="fa fa-chevron-down"></i>
+          </div>
+        </div>
+        <div class="panel-body">
+          <div class="col-xs-12">
+
+            <b>User:</b> <%= @contrib.user.username %><br/>
+            <b>Email:</b> <%= @contrib.user.email %><br/>
+            <b>Currency:</b> <%= @contrib.currency %><br/>
+            <b>Amount:</b> <%= number_with_precision(@contrib.amount, precision: @contrib.precision) %><br/>
+            <b>BTC Amount (incl. bonus):</b> <%= number_with_precision(@contrib.btc_amount, precision: 7) %><br/>
+            <b>Bonus:</b> <%= @contrib.bonus_pct.to_f %>% + <%= @contrib.bonus_per_btc.to_f %>% every 0.5 BTC<br/>
+            <b>Sender:</b> <%= @contrib.sender %><br/>
+            <b>Tx Hash:</b> <%= @contrib.tx_hash %><br/>
+            <b>Date:</b> <%= @contrib.created_at.strftime('%d/%m/%Y %H:%M') %><br/>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<% content_for :append_js do %>
+  <script>
+    $(document).ready(function () {
+      $('table').dataTable();
+    });
+  </script>
+<% end %>

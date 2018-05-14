@@ -1,0 +1,24 @@
+<p>Dear <%= @user.username %>, thank you for your registration on LWF Project.<br/>
+Your contribution will be more than appreciated.</p>
+
+<p>Here is your resume:</p>
+
+<p>
+  username: <%= @user.username %><br/>
+
+  <% if @user.email.present? %>
+  email: <%= @user.email %><br/>
+  <% end %>
+
+  registered on: <%= @user.created_at.strftime('%d/%m/%Y') %><br/>
+
+  your referral link: https://www.lwf.io/?ref=<%= @user.referral_code %><br><br>
+
+  Provide your referal link to anyone if you want to share our dream and let people become part of LWF Project.<br/>
+  If you need anything contact us at <a href="ico@lwf.io">ico@lwf.io</a>
+</p>
+
+<p>
+  Regards,<br/>
+  LWF Staff
+</p>
